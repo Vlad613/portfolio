@@ -7,26 +7,13 @@ function Projects() {
     return (
         <div className={styles.projects}>
             <div className={styles.container}>
-
-                <div className={styles.myProjects}>
+                <h2 className={styles.myProjects}>
                     Мои работы
-                </div>
+                </h2>
 
                 <div className={styles.allProjects}>
-
-                    <div className={styles.itemProject}>
-                        <ItemProjects/>
-                    </div>
-
-                    <div className={styles.itemProject}>
-                        <ItemProjects/>
-                    </div>
-
-                    <div className={styles.itemProject}>
-                        <ItemProjects/>
-                    </div>
-
-
+                    <ItemProjects title={"Social network"}/>
+                    <ItemProjects title={"Todo list"}/>
                 </div>
             </div>
         </div>

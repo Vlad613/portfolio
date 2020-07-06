@@ -1,32 +1,22 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.itemSkills {
-    height:  30vh;
-    width:  30vh;
-    /* !!  вообщем что-то тут намудрил и не могу разобраться, почему не могу ширину в процентах указать*/
+.itemSkill {
+    width: 250px;
     background-color: rgba(0, 0, 0, 0.54);
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
+    text-align: center;
 }
 
 .itemSkillsImage {
-    height: 30px;
-    width:  30px;
+    height: 60px;
+    width: 60px;
     background-color: rgba(0, 0, 0, 0.23);
 }
 
-.itemSkillsName {
 
-}
-
-.itemSkillsSpecification {
+.description {
     height: 33%;
-    width:  100%;
+    width: 100%;
     border: 1px solid;
 }

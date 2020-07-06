@@ -1,20 +1,20 @@
 import React from 'react';
 import styles from './ItemSkills.module.css';
 
-
-function ItemSkills() {
+let ItemSkills = (props) => {
     return (
-        <div className={styles.itemSkills}>
+        <div className={styles.itemSkill}>
 
             <div className={styles.itemSkillsImage}>
             </div>
 
-            <div className={styles.itemSkillsName}>
-                React
-            </div>
+            <h3 className={styles.itemSkillsName}>
+                {props.title}
+            </h3>
 
-            <div className={styles.itemSkillsSpecification}>
-            </div>
+            <span className={styles.description}>
+                {props.description}
+            </span>
 
         </div>
     );
