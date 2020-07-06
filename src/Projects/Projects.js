@@ -26,9 +26,6 @@ function Projects() {
                         <ItemProjects/>
                     </div>
 
-                    <div className={styles.itemProject}>
-                        <ItemProjects/>
-                    </div>
 
                 </div>
             </div>

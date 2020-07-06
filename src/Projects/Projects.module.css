@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- }
+}
 
 .container {
     width: 80%;
@@ -39,9 +39,17 @@
 
 }
 
-@media(max-width: 700px){
+@media (max-width: 834px) {
     .projects {
         min-width: 372px;
+    }
+
+    .container {
+        min-width: 300px;
+    }
+
+    .myProjects {
+        min-width: 300px;
     }
 
     .allProjects {
@@ -50,9 +58,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .container {
         min-width: 300px;
     }
 

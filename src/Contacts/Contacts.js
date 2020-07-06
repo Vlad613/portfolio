@@ -28,7 +28,7 @@ function Contacts() {
                 </div>
 
                 <div>
-                    <button>Отправить</button>
+                    <button type="submit">Отправить</button>
                 </div>
 
             </div>

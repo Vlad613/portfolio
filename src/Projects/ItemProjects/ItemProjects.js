@@ -2,10 +2,9 @@ import React from 'react';
 import styles from './ItemProjects.module.css';
 
 
-function ItemProjects() {
+function ItemProjects(props) {
     return (
         <div className={styles.itemProjects}>
-
             <div className={styles.itemProjectsImage}>
                         Картинка
                         <div className={styles.itemProjectsButton}>

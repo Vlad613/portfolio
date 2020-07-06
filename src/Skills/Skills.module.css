@@ -43,18 +43,29 @@
 
 }
 
-@media(max-width: 700px){
+@media(max-width: 834px){
+    .skills {
+        min-width: 372px;
+    }
+
+    .container {
+        min-width: 300px;
+    }
+
+    .mySkills {
+        min-width: 300px;
+    }
+
     .allSkills {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        min-width: 300px;
     }
 
-    .skills {
-        min-width: 372px;
-    }
+
 
     .itemSkill {
         margin: 0.5%;
