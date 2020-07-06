@@ -1,5 +1,5 @@
 .skills {
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: #c9ffd1;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 
 .mySkills {
     width:  80%;
-    height: 15vh;
+    min-height: 8vh;
     border: 1px solid;
     display: flex;
     flex-wrap: wrap;

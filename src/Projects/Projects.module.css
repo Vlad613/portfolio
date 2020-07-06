@@ -1,5 +1,5 @@
 .projects {
-    min-height: 120vh;
+    min-height: 80vh;
     background-color: #69d3ff;
     display: flex;
     flex-wrap: wrap;
@@ -13,13 +13,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-wrap: wrap;
+    /*height: 100%;*/
 
 }
 
 .myProjects {
     width: 80%;
-    min-height: 10%;
+    min-height: 8vh;
     border: 1px solid;
     display: flex;
     flex-direction: column;
