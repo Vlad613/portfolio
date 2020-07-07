@@ -10,6 +10,19 @@
     width: 300px;
 }
 
+.text h1 {
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    line-height: 1.2;
+}
+
 .title {
     height: 1px;
     width: 100%;

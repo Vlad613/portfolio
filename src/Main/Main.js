@@ -15,11 +15,9 @@ let Main = () => {
                     <p>I am Front-end Developer</p>
                 </div>
 
-
                 <div className={styles.photo}>
                     <img src='' alt=''/>
                 </div>
-
 
                 <div className={styles.title}>
                 </div>

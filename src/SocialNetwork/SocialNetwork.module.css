@@ -1,0 +1,35 @@
+.socialNetworkBlock {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialNetworkContainer {
+    margin: 5% 0 5% 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerText {
+    background-color: gray;
+}
+
+.iconSocial {
+    width: 60%;
+    min-height: 70px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+    .iconSocial {
+        justify-content: center;
+    }
+}
+
+

@@ -7,6 +7,7 @@ import Projects from "./Projects/Projects";
 import Slogan from "./Slogan/Slogan";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
+import SocialNetwork from "./SocialNetwork/SocialNetwork";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Projects/>
         <Slogan/>
         <Contacts/>
+        <SocialNetwork/>
         <Footer/>
       </div>
     </div>
