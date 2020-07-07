@@ -10,7 +10,14 @@ let Main = () => {
 
                 <div className={styles.text}>
                     <span>Hi There</span>
-                    <h1>My name is Vlad Zharnikov</h1>
+                    <h1>
+                        <span>My name is</span>
+                        <br/>
+                        <span> Vlad Zharnikov</span>
+                    </h1>
+                    <div className={styles.title}>
+
+                    </div>
                     <p>I am Front-end Developer</p>
                 </div>
 
