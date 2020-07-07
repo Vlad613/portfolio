@@ -1,27 +1,28 @@
-.projects {
+.projectsBlock {
+    min-height: 60vh;
     background-color: #69d3ff;
 }
 
-.container {
+.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
-.myProjects {
+.title {
+    background-color: #ffc1c9;
 }
 
-.allProjects {
+.projects {
     border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 @media screen and (min-width: 1129px) {
-    .allProjects {
+    .projects {
       justify-content: space-between;
     }
 }

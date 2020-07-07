@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './Contacts.module.css';
+import styleContainer from "../common/styles/Container.module.css";
 
 
 function Contacts() {
     return (
-        <div className={styles.contacts}>
-            <div className={styles.container}>
+        <div className={styles.contactsBlock}>
+            <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
 
-                <div className={styles.sloganText}>
+                <h3 className={styles.title}>
                     Контакты
-                </div>
+                </h3>
 
-                <div className={styles.contactsContainer}>
                     <form className={styles.contactsForm}>
                         <div>
                             <input className={styles.input}/>
@@ -25,7 +25,6 @@ function Contacts() {
                             <textarea className={styles.textArea}/>
                         </div>
                     </form>
-                </div>
 
                 <div>
                     <button type="submit">Отправить</button>

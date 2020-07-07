@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './Slogan.module.css';
-import NavMenu from "../Header/NavMenu/NavMenu";
+import styleContainer from "../common/styles/Container.module.css";
 
 
 function Slogan() {
   return (
-      <div className={styles.slogan}>
-        <div className={styles.container}>
-          <div className={styles.sloganText}>
+      <div className={styles.sloganBlock}>
+        <div className={`${styleContainer.container} ${styles.sloganContainer}`}>
+          <h3 className={styles.sloganText}>
             Рассматриваю варианты удаленной работы
-          </div>
+          </h3>
           <div>
             <button>Нанять меня</button>
           </div>

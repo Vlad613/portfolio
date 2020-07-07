@@ -2,26 +2,20 @@ import React from 'react';
 import styles from './ItemProjects.module.css';
 
 
-function ItemProjects(props) {
+let ItemProjects = (props) => {
     return (
-        <div className={styles.itemProjects}>
+        <div className={styles.itemProject}>
             <div className={styles.itemProjectsImage}>
-                        Картинка
-                        <div className={styles.itemProjectsButton}>
-                            <button> Смотреть</button>
-                        </div>
+                <a className={styles.itemProjectsButton}>Смотреть</a>
             </div>
-
-            <div className={styles.itemProjectsDescription}>
-                <div className={styles.itemProjectsName}>
-                    Название проекта
-                </div>
-                <div className={styles.itemProjectsSpecification}>
-                     Краткое описание
-                </div>
-            </div>
+            < h3> {props.title}
+            </h3>
+            <span className={styles.itemProjectsDescription}>{props.description}</span>
         </div>
-    );
+    )
 }
-
 export default ItemProjects;
+
+
+
+

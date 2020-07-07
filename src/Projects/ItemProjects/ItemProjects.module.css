@@ -1,40 +1,21 @@
-.itemProjects {
-    height: 30vh;
-    width:  30vh;
+.itemProject {
+    width: 450px;
     background-color: rgba(0, 0, 0, 0.54);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-
-
 }
 
 
 .itemProjectsImage {
-    height: 70%;
-    width:  30vh;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.23);
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .itemProjectsButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-.itemProjectsDescription {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+   background-color: #ffbb9d;
+    padding: 10px 20px;
 }
 
-.itemProjectsSpecification {
-    height: 8vh;
-    background-color: #9ee694;
-}
