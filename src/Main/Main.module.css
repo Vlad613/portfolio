@@ -12,6 +12,8 @@
 
 .title {
     height: 1px;
+    width: 100%;
+    margin-top: -20%;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
 }
 
