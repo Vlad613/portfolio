@@ -1,6 +1,6 @@
 .sloganBlock {
     min-height: 30vh;
-    background-color: #ffc1c9;
+    background-color: #fff;
     display: flex;
     align-items: center;
 }
@@ -15,20 +15,4 @@
     background-color: gray;
     text-align: center;
 }
-
-/*@media(max-width: 700px){*/
-/*    .slogan {*/
-/*        min-width: 372px;*/
-/*    }*/
-
-/*    .container {*/
-/*        min-width: 256px ;*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        flex-wrap: wrap;*/
-/*        justify-content: space-between;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*}*/
 

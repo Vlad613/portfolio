@@ -1,6 +1,6 @@
 .contactsBlock {
     min-height: 70vh;
-    background-color: #30ff97;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +31,10 @@
 .submitBtn {
     padding: 10px 20px;
     background-color: #d8c3ff;
+}
+
+@media screen and (max-width: 1000px) {
+    .contactsForm {
+        width: 100%;
+    }
 }
