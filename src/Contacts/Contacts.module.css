@@ -2,12 +2,14 @@
     min-height: 70vh;
     background-color: #30ff97;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .contactsContainer {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title {
@@ -16,21 +18,15 @@
 
 
 .contactsForm {
-    width: 250px;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .input {
-    max-width: 100%;
+    width: 100%;
     height: 3vh;
 }
 
 .textArea {
-   max-width: 100%;
+    width: 100%;
     height: 14vh;
     resize: none;
 }

@@ -12,19 +12,19 @@ function Contacts() {
                     Контакты
                 </h3>
 
-                    <form className={styles.contactsForm}>
-                        <div>
-                            <input className={styles.input}/>
-                        </div>
+                <form className={styles.contactsForm}>
+                    <div>
+                        <input className={styles.input}/>
+                    </div>
 
-                        <div>
-                            <input className={styles.input}/>
-                        </div>
+                    <div>
+                        <input className={styles.input}/>
+                    </div>
 
-                        <div>
-                            <textarea className={styles.textArea}/>
-                        </div>
-                    </form>
+                    <div>
+                        <textarea className={styles.textArea}/>
+                    </div>
+                </form>
 
                 <div>
                     <button type="submit">Отправить</button>
