@@ -7,31 +7,17 @@ function Contacts() {
     return (
         <div className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
-
-                <h3 className={styles.title}>
+                <h2 className={styles.title}>
                     Контакты
-                </h3>
+                </h2>
 
                 <form className={styles.contactsForm}>
-                    <div>
-                        <input className={styles.input}/>
-                    </div>
-
-                    <div>
-                        <input className={styles.input}/>
-                    </div>
-
-                    <div>
-                        <textarea className={styles.textArea}/>
-                    </div>
+                    <input type="text"/>
+                    <input type="text"/>
+                    <textarea/>
+                    <button type="submit" className={styles.submitBtn}>Отправить</button>
                 </form>
-
-                <div>
-                    <button type="submit">Отправить</button>
-                </div>
-
             </div>
-
         </div>
     );
 }

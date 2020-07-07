@@ -21,30 +21,15 @@
     min-height: 70px;
     border: 1px solid;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-/*@media (max-width: 700px) {*/
-/*    .footer {*/
-/*        min-width: 372px;*/
-/*    }*/
-
-/*    .container {*/
-/*        min-width: 256px;*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        flex-wrap: wrap;*/
-/*        justify-content: space-between;*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .iconSocial {*/
-/*        width: 100%;*/
-/*    }*/
-
-/*}*/
+@media screen and (max-width: 600px) {
+    .iconSocial {
+        justify-content: center;
+    }
+}
 
 

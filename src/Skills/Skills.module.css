@@ -23,28 +23,8 @@
     flex-wrap: wrap;
 }
 
-
-/*@media(max-width: 834px){*/
-/*    .skills {*/
-/*        min-width: 372px;*/
-/*    }*/
-
-/*    .container {*/
-/*        min-width: 300px;*/
-/*    }*/
-
-/*    .mySkills {*/
-/*        min-width: 300px;*/
-/*    }*/
-
-/*    .allSkills {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        min-width: 300px;*/
-/*    }*/
-
-
-/*    .itemSkill {*/
-/*        margin: 0.5%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 1000px) {
+    .skills {
+        justify-content: center;
+    }
+}
