@@ -1,8 +1,9 @@
 .itemProject {
     width: 450px;
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
+    text-transform: capitalize;
 }
 
 
@@ -15,7 +16,34 @@
 }
 
 .itemProjectsButton {
-   background-color: #ffbb9d;
-    padding: 10px 20px;
+    padding: 11px 20px;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0!important;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 1.2;
 }
+
+.itemProject h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100%;
+    color: #333;
+    font-weight: 700!important;
+    text-align: center!important;
+    margin-top: 1rem!important;
+}
+
+.itemProjectsDescription {
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #6e7373;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center!important;
+}
+
 

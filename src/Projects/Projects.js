@@ -9,11 +9,11 @@ function Projects() {
     return (
         <div className={styles.projectsBlock}>
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-                <Title text='Projects'/>
+                <Title text='Projects' titleSpan='PORTFOLIO'/>
                 
                 <div className={styles.projects}>
-                    <ItemProjects title={"Social network"}/>
-                    <ItemProjects title={"Todo list"}/>
+                    <ItemProjects title={"Social network"} description={"my work social network "}/>
+                    <ItemProjects title={"Todo list"} description={"what i can do"}/>
                 </div>
             </div>
         </div>

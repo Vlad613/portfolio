@@ -8,9 +8,9 @@ import Title from "../common/components/Title/Title";
 function Skills() {
     return (
         <div className={styles.skillsBlock}>
-
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
-                <Title text='Skills'/>
+
+                <Title text='Skills' titleSpan='WHAT I DO'/>
 
                 <div className={styles.skills}>
                     <ItemSkills title={'React'} description={'I know'}/>

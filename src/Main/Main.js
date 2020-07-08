@@ -5,19 +5,20 @@ import styleContainer from '../common/styles/Container.module.css'
 
 let Main = () => {
     return (
-        <div className={styles.main}>
-            <div className={styleContainer.container}>
+        <div className={styles.mainBlock}>
+            <div className={`${styleContainer.container} ${styles.mainContainer}`}>
+
 
                 <div className={styles.text}>
-                    <span>Hi There</span>
-                    <h1>My name is Vlad Zharnikov</h1>
+                    <span>HELLO, I AM</span>
+                    <h1>Vlad Zharnikov</h1>
 
                     <p>I am Front-end Developer</p>
                 </div>
 
-                <div className={styles.photo}>
-                    <img src='' alt=''/>
-                </div>
+                {/*<div className={styles.photo}>*/}
+                {/*    <img src='' alt=''/>*/}
+                {/*</div>*/}
 
                 <div className={styles.title}>
                 </div>
