@@ -13,11 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .itemProjectsButton {
     padding: 11px 20px;
-    background: #fff;
+    background: #f7f7f7;
     font-size: 14px;
     border-radius: 2px;
     font-family: 'Open Sans', sans-serif;

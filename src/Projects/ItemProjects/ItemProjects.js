@@ -5,7 +5,7 @@ import styles from './ItemProjects.module.css';
 let ItemProjects = (props) => {
     return (
         <div className={styles.itemProject}>
-            <div className={styles.itemProjectsImage}>
+            <div className={styles.itemProjectsImage} style={props.style}>
                 <a className={styles.itemProjectsButton}>View</a>
             </div>
             <span className={styles.itemProjectsDescription}>{props.description}</span>
