@@ -9,9 +9,7 @@ let ItemProjects = (props) => {
                 <a className={styles.itemProjectsButton}>View</a>
             </div>
             <span className={styles.itemProjectsDescription}>{props.description}</span>
-            < h3> {props.title}
-            </h3>
-
+            < h3> {props.title}</h3>
         </div>
     )
 }

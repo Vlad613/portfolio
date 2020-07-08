@@ -5,7 +5,15 @@ import styleContainer from "../common/styles/Container.module.css";
 import Title from "../common/components/Title/Title";
 
 
-function Projects() {
+let Projects=()=> {
+    const socialNetworkImage = {
+        backgroundImage: 'url('+ imgUrl +')',
+    };
+
+    const toDoLostImage = {
+        backgroundImage: 'url('+ imgUrl +')',
+    };
+
     return (
         <div className={styles.projectsBlock}>
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>

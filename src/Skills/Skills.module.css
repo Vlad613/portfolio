@@ -8,7 +8,7 @@
 .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
 
 

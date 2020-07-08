@@ -8,20 +8,12 @@ let Main = () => {
         <div className={styles.mainBlock}>
             <div className={`${styleContainer.container} ${styles.mainContainer}`}>
 
-
                 <div className={styles.text}>
                     <span>HELLO, I AM</span>
                     <h1>Vlad Zharnikov</h1>
-
                     <p>I am Front-end Developer</p>
-                </div>
 
-                {/*<div className={styles.photo}>*/}
-                {/*    <img src='' alt=''/>*/}
-                {/*</div>*/}
-
-                <div className={styles.title}>
-                </div>
+    </div>
 
             </div>
 

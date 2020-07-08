@@ -4,7 +4,7 @@
 }
 
 .mainContainer {
-
+ /*background-image:  ;*/
 }
 
 .text {
@@ -48,14 +48,10 @@
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
     left: 0;
     right: 0;
+    margin-top: -80px;
     height: 1px;
     width: 100%;
     content: "";
     position: absolute;
 }
 
-.photo {
-    height: 400px;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.34);
-}
