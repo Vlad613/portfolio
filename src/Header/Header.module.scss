@@ -1,0 +1,47 @@
+.headerBlock {
+  position: fixed !important;
+  background-color: #fff;
+  z-index: 999;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  left: 0;
+  right: 0;
+
+  @media (min-width: 992px) {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navBarLogo {
+      color: rgba(0, 0, 0, .9);
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-family: 'Josefin Sans', sans-serif;
+      margin-right: auto !important;
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+
+
+    @media screen and (min-width: 992px) {
+      max-width: 960px;
+      flex-wrap: nowrap;
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+    }
+  }
+}
+
+
+
+

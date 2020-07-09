@@ -1,0 +1,42 @@
+.navMenu {
+  flex-grow: 1;
+  align-items: center;
+
+  /*border: 1px solid;*/
+  /*width: 400px;*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+
+  .navBarNav {
+      margin-left: auto!important;
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    @media screen and (max-width: 992px) {
+      flex-direction: row;
+    }
+      .link {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          position: relative;
+          display: inline-block;
+          color: rgba(0,0,0,.7) !important;
+          text-transform: uppercase;
+          opacity: 0.8;
+          text-decoration: none;
+          padding: .5rem 1rem;
+          font-family: 'Open Sans', sans-serif;
+          .linkOnFocus {
+              opacity: 1;
+              color: #fd735a !important;
+          }
+      }
+
+  }
+  @media screen and (max-width: 992px) {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
