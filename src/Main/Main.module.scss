@@ -1,3 +1,4 @@
+@import '../common/styles/sass/variables';
 .mainBlock {
   height: 100vh;
   background-color: #2a2d36;
@@ -12,7 +13,7 @@
     background-position: center;
     position: relative;
 
-    &::after { /*why its not work!!!!!!!!*/
+    &::after {
       content: "";
       height: 100%;
       width: 100%;
@@ -26,8 +27,8 @@
     }
 
     .mainContainer {
-      /*background-image:  ;*/
       .text {
+          color: $mainColorOne;
         width: 300px;
         text-align: center;
         position: relative;
@@ -36,7 +37,6 @@
         span {
           width: 100%;
           font-size: 20px;
-          color: #fff;
           font-weight: 300;
           letter-spacing: 3px;
           padding-bottom: 10px;
@@ -45,7 +45,6 @@
         }
 
         h1 {
-          color: #fff;
           font-weight: 300;
           padding-bottom: 20px;
           margin-bottom: 30px;
@@ -69,7 +68,6 @@
         }
 
         p {
-          color: #fff;
           font-family: 'Open Sans', sans-serif;
           font-size: 20px;
           font-weight: 300 !important;
