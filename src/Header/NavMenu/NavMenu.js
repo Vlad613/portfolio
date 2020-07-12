@@ -4,25 +4,32 @@ import styles from './NavMenu.module.scss';
 
 const NavMenu = () => {
 
-    let [onFocusMode, setFocusMode] = useState(false);
+    let [onFocusMode, setFocusMode] = useState([
+        {main: false},
+        {skills: false},
+        {projects: false},
+        {contacts: false}]);
 
-    const activateFocusMode = () => {
-        setFocusMode(true);
+    debugger
+
+    const activateFocusMode = (currentHref) => {
+        setFocusMode({currentHref: true});
     };
     const deActivateFocusMode = () => {
-        setFocusMode(false);
+        setFocusMode({prcurrentHref: false});
     };
+
 
     return (
         <div className={styles.navMenu}>
             <ul className={styles.navBarNav}>
 
-                {!onFocusMode &&
-                <li onMouseOver={activateFocusMode}>
+                {!onFocusMode.main &&
+                <li onMouseOver={()=>{activateFocusMode(main)}}>
                     <a href=''
                        className={styles.link}>MAIN</a></li>}
 
-                {onFocusMode &&
+                {onFocusMode.main &&
                 <li onMouseOut={deActivateFocusMode}>
                     <a href=''
                        className={styles.linkOnFocus}>MAIN</a></li>}
