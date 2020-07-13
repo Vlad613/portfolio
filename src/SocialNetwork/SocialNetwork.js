@@ -21,9 +21,6 @@ let SocialNetwork = () => {
                     <div>
                         <ItemIconSocial/>
                     </div>
-                    <div>
-                        <ItemIconSocial/>
-                    </div>
 
                 </div>
 

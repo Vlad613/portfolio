@@ -1,0 +1,29 @@
+.itemIconContainer {
+    width: 100%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+
+  .itemIconSocial {
+      width: 30vh;
+    visibility: visible;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+    height: 170px;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid #eee;
+      .contactIcon {
+          border: 1px solid;
+          height: 20px;
+          width: 20px;
+      }
+      .contactDetail {
+
+      }
+  }
+}

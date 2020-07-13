@@ -17,9 +17,8 @@
 }
 
 .iconSocial {
-    width: 60%;
+    width: 100%;
     min-height: 70px;
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
