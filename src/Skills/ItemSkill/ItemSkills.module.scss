@@ -1,0 +1,42 @@
+@import '../../common/styles/sass/variables';
+
+.itemSkill {
+  width: 250px;
+  background-color: $mainColorTwo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+    background-position: 50% 553px;
+
+
+  .itemSkillsImage {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .itemSkillsName {
+
+  }
+
+  .description {
+    height: 33%;
+    width: 100%;
+    font-weight: 500;
+    color: #6e7373;
+    font-family: 'Open Sans', sans-serif;;
+  }
+}
+
+
+
+

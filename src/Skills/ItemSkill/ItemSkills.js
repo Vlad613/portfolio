@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './ItemSkills.module.css';
+import styles from './ItemSkills.module.scss';
 
 let ItemSkills = (props) => {
     return (
         <div className={styles.itemSkill}>
 
-            <div className={styles.itemSkillsImage}>
+            <div className={styles.itemSkillsImage} style={props.style}>
+
             </div>
 
             <h3 className={styles.itemSkillsName}>
