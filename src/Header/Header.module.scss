@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
     .navBarLogo {
       color: rgba(0, 0, 0, .9);
@@ -39,6 +40,17 @@
       //justify-content: center;
       //align-items: center;
     }
+  }
+
+  &::after {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    content: "";
+    bottom: 0;
   }
 }
 

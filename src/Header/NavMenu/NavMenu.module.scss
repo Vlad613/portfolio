@@ -13,6 +13,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    flex-direction: row-reverse;
     @media screen and (max-width: 992px) {
       flex-direction: row;
     }
@@ -59,6 +60,7 @@
     }
 
   }
+
 
   @media screen and (max-width: 992px) {
     display: flex !important;
