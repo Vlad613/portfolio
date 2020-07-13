@@ -12,8 +12,18 @@ function Contacts() {
 
                 <form className={styles.contactsForm}>
                     <h5 className={styles.contactsFormHead}>Contact Form</h5>
-                    <input type="text"/>
-                    <input type="text"/>
+                    <div className={styles.contactsFormRow}>
+                        <div className={styles.contactsFormInputContainer}>
+                            <div className={styles.contactsFormInput}>
+                                <input type="text" placeholder={"Your Name"}/>
+                            </div>
+                        </div>
+                        <div className={styles.contactsFormInputContainer}>
+                            <div className={styles.contactsFormInput}>
+                                <input type="text" placeholder={"Your Email"}/>
+                            </div>
+                        </div>
+                    </div>
                     <textarea/>
                     <button type="submit" className={styles.submitBtn}>Отправить</button>
                 </form>
