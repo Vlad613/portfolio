@@ -10,15 +10,24 @@ function Contacts() {
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
                 <Title text='Contacts' titleSpan='SAY HELLO'/>
 
-                <form className={styles.contactsForm}>
 
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea/>
-                    <button type="submit" className={styles.submitBtn}>Отправить</button>
+
+                <form className={styles.contactsForm}>
+                    <h5 className={styles.formTitle}>ContactForm</h5>
+                    <div className={styles.formInputs}>
+                        <input type="text" placeholder={"Your Name"}/>
+                        <input type="text" placeholder={"Your Email"}/>
+                    </div>
+                    <div className={styles.formText}>
+                    <textarea placeholder={"Your message..."}/>
+                    </div>
+                    <div className={styles.formBtn}>
+                    <button type="submit" className={styles.submitBtn}>SEND</button>
+                    </div>
                 </form>
+                </div>
             </div>
-        </div>
+
     );
 }
 

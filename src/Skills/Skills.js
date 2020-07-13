@@ -29,8 +29,8 @@ let Skills=()=> {
                 <Title text='Skills' titleSpan='WHAT I DO'/>
 
                 <div className={styles.skills}>
-                    <ItemSkills title={'React'} description={'I know'}  style={reactIcon}/>
                     <ItemSkills title={'JS'} description={'I learn'}  style={jsIcon}/>
+                    <ItemSkills title={'React'} description={'I know'}  style={reactIcon}/>
                     <ItemSkills title={'Redux'} description={'I stink, that I know'} style={reduxIcon}/>
                 </div>
             </div>
