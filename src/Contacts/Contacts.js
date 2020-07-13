@@ -11,6 +11,7 @@ function Contacts() {
                 <Title text='Contacts' titleSpan='SAY HELLO'/>
 
                 <form className={styles.contactsForm}>
+
                     <input type="text"/>
                     <input type="text"/>
                     <textarea/>
