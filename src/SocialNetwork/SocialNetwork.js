@@ -4,7 +4,6 @@ import ItemIconSocial from "./ItemIconSocial/ItemIconSocial";
 import styleContainer from "../common/styles/Container.module.css";
 
 
-
 let SocialNetwork = () => {
     return (
         <div className={styles.socialNetworkBlock}>
@@ -13,7 +12,8 @@ let SocialNetwork = () => {
                 <div className={styles.iconSocial}>
 
                     <div>
-                        <ItemIconSocial/>
+                        <ItemIconSocial href='+37529 511 81 90'
+                                        slogan='Call Me'/>
                     </div>
                     <div>
                         <ItemIconSocial/>
