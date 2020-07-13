@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Contacts.module.css';
+import styles from './Contacts.module.scss';
 import styleContainer from "../common/styles/Container.module.css";
 import Title from "../common/components/Title/Title";
 
@@ -11,6 +11,7 @@ function Contacts() {
                 <Title text='Contacts' titleSpan='SAY HELLO'/>
 
                 <form className={styles.contactsForm}>
+                    <h5 className={styles.contactsFormHead}>Contact Form</h5>
                     <input type="text"/>
                     <input type="text"/>
                     <textarea/>
