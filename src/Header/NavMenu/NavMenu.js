@@ -15,8 +15,8 @@ const NavMenu = () => {
     const activateFocusMode = (currentHref) => {
         setFocusMode({currentHref: true});
     };
-    const deActivateFocusMode = () => {
-        setFocusMode({prcurrentHref: false});
+    const deActivateFocusMode = (currentHref) => {
+        setFocusMode({currentHref: false});
     };
 
 
@@ -25,12 +25,12 @@ const NavMenu = () => {
             <ul className={styles.navBarNav}>
 
                 {!onFocusMode.main &&
-                <li onMouseOver={()=>{activateFocusMode(main)}}>
+                <li onMouseOver={()=>activateFocusMode(main)}>
                     <a href=''
                        className={styles.link}>MAIN</a></li>}
 
                 {onFocusMode.main &&
-                <li onMouseOut={deActivateFocusMode}>
+                <li onMouseOut={deActivateFocusMode(main)}>
                     <a href=''
                        className={styles.linkOnFocus}>MAIN</a></li>}
 
