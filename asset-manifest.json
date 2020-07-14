@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b5252ecb.chunk.css",
-    "main.js": "/portfolio/static/js/main.7ef0d446.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7ef0d446.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dba2099b.chunk.css",
+    "main.js": "/portfolio/static/js/main.e145aa94.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e145aa94.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.971f9005.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.971f9005.js.map",
-    "static/js/2.baea1c18.chunk.js": "/portfolio/static/js/2.baea1c18.chunk.js",
-    "static/js/2.baea1c18.chunk.js.map": "/portfolio/static/js/2.baea1c18.chunk.js.map",
+    "static/js/2.1b5e021a.chunk.js": "/portfolio/static/js/2.1b5e021a.chunk.js",
+    "static/js/2.1b5e021a.chunk.js.map": "/portfolio/static/js/2.1b5e021a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.9bdeee1e8a33edd7ac0c27fc3490c390.js": "/portfolio/precache-manifest.9bdeee1e8a33edd7ac0c27fc3490c390.js",
+    "precache-manifest.5d380d9e0813c8d4b2d743cb873999d7.js": "/portfolio/precache-manifest.5d380d9e0813c8d4b2d743cb873999d7.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.b5252ecb.chunk.css.map": "/portfolio/static/css/main.b5252ecb.chunk.css.map"
+    "static/css/main.dba2099b.chunk.css.map": "/portfolio/static/css/main.dba2099b.chunk.css.map",
+    "static/media/JS.jpg": "/portfolio/static/media/JS.8b8524a4.jpg",
+    "static/media/MainPhotoTest.jpg": "/portfolio/static/media/MainPhotoTest.ab899e02.jpg",
+    "static/media/SocialNetwork.jpg": "/portfolio/static/media/SocialNetwork.7702b946.jpg",
+    "static/media/facebook.jpg": "/portfolio/static/media/facebook.0dfae155.jpg",
+    "static/media/freelanceJob.jpg": "/portfolio/static/media/freelanceJob.ac16d3ea.jpg",
+    "static/media/mail.jpg": "/portfolio/static/media/mail.ea47cbc1.jpg",
+    "static/media/redux.jpg": "/portfolio/static/media/redux.e90d9038.jpg",
+    "static/media/telephone.jpg": "/portfolio/static/media/telephone.485af2a6.jpg",
+    "static/media/toDoList.jpg": "/portfolio/static/media/toDoList.66d13e6e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.971f9005.js",
-    "static/js/2.baea1c18.chunk.js",
-    "static/css/main.b5252ecb.chunk.css",
-    "static/js/main.7ef0d446.chunk.js"
+    "static/js/2.1b5e021a.chunk.js",
+    "static/css/main.dba2099b.chunk.css",
+    "static/js/main.e145aa94.chunk.js"
   ]
 }
