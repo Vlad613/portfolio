@@ -13,7 +13,7 @@ function ContactsForm() {
 
 
                 <form className={styles.contactsForm}>
-                    <h5 className={styles.formTitle}>ContactForm</h5>
+                    <h5 className={styles.formTitle}>Contact Form</h5>
                     <div className={styles.formInputs}>
                         <input type="text" placeholder={"Your Name"}/>
                         <input type="text" placeholder={"Your Email"}/>
