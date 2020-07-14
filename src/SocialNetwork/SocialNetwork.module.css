@@ -25,11 +25,9 @@
     align-items: flex-start;
 }
 
-
 @media screen and (max-width: 1030px) {
     .iconSocial {
         justify-content: center;
     }
-
 }
 

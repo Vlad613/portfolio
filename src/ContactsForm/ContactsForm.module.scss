@@ -9,7 +9,6 @@
     justify-content: flex-start;
     margin-top: 20px;
 
-
     .contactsForm {
       width: 100%;
       display: flex;
@@ -34,9 +33,16 @@
         text-align: left;
         padding-right: 15px;
         padding-left: 15px;
-
+        @media screen and (max-width: 687px) {
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding-left: 0px;
+        }
 
         input {
+          display: flex;
+          align-self: flex-start;
           width: 50%;
           position: relative;
           visibility: visible;
@@ -55,6 +61,11 @@
           overflow: hidden;
           border: 1px solid #eee;
           transition: all 0.3s ease-in-out 0s;
+          @media screen and (max-width: 687px) {
+            display: flex;
+            box-sizing: border-box;
+            width: 100%;
+          }
         }
       }
 
@@ -86,8 +97,9 @@
           overflow: hidden;
           border: 1px solid #eee;
           transition: all 0.3s ease-in-out 0s;
-          font-size: 1rem
-
+          font-size: 1rem;
+          @media screen and (max-width: 687px) {
+          }
         }
       }
 
@@ -125,6 +137,7 @@
       @media screen and (max-width: 1000px) {
         width: 100%;
       }
+
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vlad613.github.io/portfolio/",
   "dependencies": {
     "node-sass": "^4.14.1",
     "react": "^16.10.2",
