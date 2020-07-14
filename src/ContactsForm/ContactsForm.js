@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Contacts.module.scss';
+import styles from './ContactsForm.module.scss';
 import styleContainer from "../common/styles/Container.module.css";
 import Title from "../common/components/Title/Title";
 
 
-function Contacts() {
+function ContactsForm() {
     return (
         <div className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
@@ -31,5 +31,5 @@ function Contacts() {
     );
 }
 
-export default Contacts;
+export default ContactsForm;
 

@@ -10,3 +10,10 @@
     font: 400 16px/1.8 'Josefin Sans', sans-serif;
     color: #333;
 }
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        flex-wrap: nowrap;
+    }
+}
