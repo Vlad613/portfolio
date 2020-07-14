@@ -3,7 +3,7 @@ import styles from './ItemSkills.module.scss';
 
 let ItemSkills = (props) => {
     return (
-        <div className={styles.itemSkill}>
+        <div className={styles.itemSkillContainer}>
 
             <div className={styles.itemSkillsImage} style={props.style}>
 

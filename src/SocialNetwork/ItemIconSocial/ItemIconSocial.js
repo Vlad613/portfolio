@@ -6,7 +6,8 @@ let ItemIconSocial = (props) => {
     return (
         <div className={styles.itemIconContainer}>
             <div className={styles.itemIconSocial}>
-                <div className={styles.contactIcon}>
+                <div className={styles.contactIcon} style={props.style}>
+
                 </div>
                 <div className={styles.contactDetail}>
                     <a href={""}>{props.href}</a>
