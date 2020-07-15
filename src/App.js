@@ -7,7 +7,7 @@ import Projects from "./Projects/Projects";
 import Slogan from "./Slogan/Slogan";
 import ContactsForm from "./ContactsForm/ContactsForm";
 import Footer from "./Footer/Footer";
-import SocialNetwork from "./SocialNetwork/SocialNetwork";
+import Contscts from "./SocialNetwork/Contscts";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Projects/>
         <Slogan/>
         <ContactsForm/>
-        <SocialNetwork/>
+        <Contscts/>
         <Footer/>
       </div>
     </div>

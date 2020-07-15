@@ -15,14 +15,15 @@ let Projects = () => {
     const toDoLostImage = {
         backgroundImage: `url(${toDoList})`,
     };
-
+ const socialNetworkHref = 'https://vlad613.github.io/social_network/'
     return (
         <div className={styles.projectsBlock}>
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                 <Title text='Projects' titleSpan='PORTFOLIO'/>
 
                 <div className={styles.projects}>
-                    <ItemProjects title={"Social network"}
+                    <ItemProjects href={socialNetworkHref}
+                                  title={"Social network"}
                                   description={"my work social network "}
                                   style={socialNetworkImage}/>
                     <ItemProjects title={"Todo list"}
