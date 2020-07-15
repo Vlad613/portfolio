@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import NavMenu from "./NavMenu/NavMenu";
 import styleContainer from "../common/styles/Container.module.css";
+import NavMenuMini from "./NavMenuMini/NavMenuMini";
 
 
 function Header() {
@@ -10,7 +11,8 @@ function Header() {
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
                 <a className={styles.navBarLogo}>Vlad</a>
-                <NavMenu/>
+                <NavMenuMini/>
+                {/*<NavMenu/>*/}
             </div>
         </div>
     );

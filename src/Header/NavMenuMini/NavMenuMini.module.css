@@ -1,0 +1,101 @@
+.navMenuMiniBlock{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.navMenuIcon{
+
+}
+
+.navBarIconContainer{
+  outline: none;
+  padding: 0;
+  border: none;
+}
+.svgContainer{
+  display: flex;
+  /*height: 50px;*/
+  /*width: 50px;*/
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  user-select: none;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.lineTop{
+  stroke-dasharray: 40 139;
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #212529;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.lineMiddle{
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #212529;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.lineBottom{
+  stroke-dasharray: 40 180;
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #212529;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+nav > ul {
+  padding: 0;
+}
+nav li{
+  display: inline-block;
+  vertical-align: top;
+}
+nav a{
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+nav a:hover{
+  border: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+nav label:hover{
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+@media screen and (max-width: 1800px) {
+
+  nav label{
+    display: inline-block;
+  }
+  nav > ul {
+    display: flex;
+    align-self: flex-start;
+  }
+  input[type="checkbox"]:checked ~ label + ul {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 130px;
+  }
+
+}
