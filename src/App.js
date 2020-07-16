@@ -7,20 +7,22 @@ import Projects from "./Projects/Projects";
 import Slogan from "./Slogan/Slogan";
 import ContactsForm from "./ContactsForm/ContactsForm";
 import Footer from "./Footer/Footer";
-import Contscts from "./SocialNetwork/Contscts";
+import Contacts from "./SocialNetwork/Contacts";
+import NavMenuMiniDetailed from "./Header/NavMenuMiniDetailed/NavMenuMiniDetailed";
 
 
 function App() {
   return (
     <div className="App">
       <div className="portfolio">
-        <Header/>
+        <NavMenuMiniDetailed/>
+        {/*<Header/>*/}
         <Main/>
         <Skills/>
         <Projects/>
         <Slogan/>
         <ContactsForm/>
-        <Contscts/>
+        <Contacts/>
         <Footer/>
       </div>
     </div>

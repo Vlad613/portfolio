@@ -7,7 +7,7 @@ import Mail from '../assets/image/ContactsIkons/mail.jpg';
 import Telephone from '../assets/image/ContactsIkons/telephone.jpg';
 
 
-let Contscts = () => {
+let Contacts = () => {
 
     const facebookIcon = {
         backgroundImage: `url(${Facebook})`,
@@ -46,4 +46,4 @@ let Contscts = () => {
     );
 }
 
-export default Contscts;
+export default Contacts;
