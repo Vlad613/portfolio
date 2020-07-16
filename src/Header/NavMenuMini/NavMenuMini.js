@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from './NavMenuMini.module.css';
+import styles from './NavMenuMini.module.scss';
 
 
 class NavMenuMini extends Component {
