@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ContactsForm.module.scss';
-import styleContainer from "../common/styles/Container.module.css";
-import Title from "../common/components/Title/Title";
+import styleContainer from "../../common/styles/Container.module.css";
+import Title from "../../common/components/Title/Title";
 
 
 function ContactsForm() {

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Contacts.module.css';
 import ItemContact from "./ItemContact/ItemContact";
-import styleContainer from "../common/styles/Container.module.css";
-import Facebook from '../assets/image/ContactsIkons/facebook.jpg';
-import Mail from '../assets/image/ContactsIkons/mail.jpg';
-import Telephone from '../assets/image/ContactsIkons/telephone.jpg';
+import styleContainer from "../../common/styles/Container.module.css";
+import Facebook from '../../assets/image/ContactsIkons/facebook.jpg';
+import Mail from '../../assets/image/ContactsIkons/mail.jpg';
+import Telephone from '../../assets/image/ContactsIkons/telephone.jpg';
 
 
 let Contacts = () => {

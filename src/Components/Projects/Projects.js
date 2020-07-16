@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import ItemProjects from './ItemProjects/ItemProjects';
-import styleContainer from '../common/styles/Container.module.css';
-import Title from '../common/components/Title/Title';
-import socialNetwork from './../assets/image/SocialNetwork.jpg'
-import toDoList from './../assets/image/toDoList.jpg'
+import styleContainer from '../../common/styles/Container.module.css';
+import Title from '../../common/components/Title/Title';
+import socialNetwork from '../../assets/image/SocialNetwork.jpg'
+import toDoList from '../../assets/image/toDoList.jpg'
 
 
 let Projects = () => {

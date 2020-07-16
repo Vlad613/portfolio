@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Main.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
-import MainPhotoTest from '../assets/image/MainPhotoTest.jpg'
+import styleContainer from '../../common/styles/Container.module.css'
+import MainPhotoTest from '../../assets/image/MainPhotoTest.jpg'
 
 
 

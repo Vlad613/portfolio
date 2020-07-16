@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Slogan.module.scss';
-import styleContainer from "../common/styles/Container.module.css";
-import freelanceJob from '../assets/image/freelanceJob.jpg'
+import styleContainer from "../../common/styles/Container.module.css";
+import freelanceJob from '../../assets/image/freelanceJob.jpg'
 
 
 function Slogan() {

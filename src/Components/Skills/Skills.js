@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from "./Skills.module.css"
 import ItemSkills from "./ItemSkill/ItemSkills";
-import styleContainer from '../common/styles/Container.module.css'
-import Title from "../common/components/Title/Title";
-import JsIcon from '../assets/image/skillsIkons/JS.jpg'
-import ReactIcon from '../assets/image/skillsIkons/react.jpg'
-import ReduxIcon from '../assets/image/skillsIkons/redux.jpg'
+import styleContainer from '../../common/styles/Container.module.css'
+import Title from "../../common/components/Title/Title";
+import JsIcon from '../../assets/image/skillsIkons/JS.jpg'
+import ReactIcon from '../../assets/image/skillsIkons/react.jpg'
+import ReduxIcon from '../../assets/image/skillsIkons/redux.jpg'
 
 
 

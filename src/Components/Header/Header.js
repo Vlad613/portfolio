@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import NavMenu from "./NavMenu/NavMenu";
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../../common/styles/Container.module.css";
 import NavMenuMini from "./NavMenuMini/NavMenuMini";
 
 
@@ -11,8 +11,8 @@ function Header() {
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
                 <a className={styles.navBarLogo}>Vlad</a>
-                <NavMenuMini/>
-                {/*<NavMenu/>*/}
+                {/*<NavMenuMini/>*/}
+                <NavMenu/>
             </div>
         </div>
     );

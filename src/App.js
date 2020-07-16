@@ -1,22 +1,35 @@
 import React from 'react';
 import './App.scss';
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import Skills from "./Skills/Skills";
-import Projects from "./Projects/Projects";
-import Slogan from "./Slogan/Slogan";
-import ContactsForm from "./ContactsForm/ContactsForm";
-import Footer from "./Footer/Footer";
-import Contacts from "./SocialNetwork/Contacts";
-import NavMenuMiniDetailed from "./Header/NavMenuMiniDetailed/NavMenuMiniDetailed";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+import Skills from "./Components/Skills/Skills";
+import Projects from "./Components/Projects/Projects";
+import Slogan from "./Components/Slogan/Slogan";
+import ContactsForm from "./Components/ContactsForm/ContactsForm";
+import Footer from "./Components/Footer/Footer";
+import Contacts from "./Components/SocialNetwork/Contacts";
+import NavMenuMiniDetailed from "./Components/Header/HeaderMiniDetailed/NavMenuMiniDetailed";
 
 
 function App() {
+
+
+    let resizeHeaderForMobile =()=>{
+        let action ={type:'RESIZE-WINDOW-FOR-MOBILE'}
+        appReducer.dispatch(action)
+    };
+
+    let resizeHeaderForPC =()=>{
+       let action ={type:'RESIZE-WINDOW-FOR-PC'}
+        appReducer.dispatch(action)
+    };
+
+
   return (
     <div className="App">
       <div className="portfolio">
-        <NavMenuMiniDetailed/>
-        {/*<Header/>*/}
+        {/*<NavMenuMiniDetailed/>*/}
+        <Header/>
         <Main/>
         <Skills/>
         <Projects/>
