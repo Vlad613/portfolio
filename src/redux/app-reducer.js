@@ -1,24 +1,22 @@
-const RESIZE_WINDOW_FOR_MOBILE = 'RESIZE-WINDOW-FOR-MOBILE';
-const RESIZE_WINDOW_FOR_PC = 'RESIZE-WINDOW-FOR-PC';
+const RESIZE_HEADER = 'RESIZE-HEADER';
 
-const initialState = {smallHeaderMenu: false};
+const initialState = {appWindowSize: 4000};
 
 
-const appReducer = (state=initialState, action) => {
+const appReducer = (state = initialState, action) => {
+
     switch (action.type) {
-        case RESIZE_WINDOW_FOR_MOBILE:
-            state.smallHeaderMenu = true;
+        case RESIZE_HEADER:
+            debugger
+            state.appWindowSize = action.windowSize;
             return state;
 
-        case RESIZE_WINDOW_FOR_PC:
-            state.smallHeaderMenu = false;
-            return state;
         default:
             return state;
     }
+
 };
 
-export const resizeHeaderForMobileActionCreator = () => ({type: RESIZE_WINDOW_FOR_MOBILE});
-export const resizeHeaderForPCActionCreator = () => ({type: RESIZE_WINDOW_FOR_PC});
+export const resizeHeaderActionCreator = (windowSize) => ({type: RESIZE_HEADER, windowSize: windowSize});
 
 export default appReducer;

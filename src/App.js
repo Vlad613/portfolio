@@ -9,27 +9,28 @@ import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
 import appReducer from '../src/redux/app-reducer'
-import {resizeHeaderForMobileActionCreator, resizeHeaderForPCActionCreator} from "./redux/app-reducer";
+import {
+    // resizeHeaderForMobileActionCreator,
+    // resizeHeaderForPCActionCreator,
+    resizeHeaderActionCreator
+} from "./redux/app-reducer";
 import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
 
 
 const App = (store) => {
+    let windowSize = window.innerWidth;
 
-    let resizeHeaderForMobile = () => {
-        appReducer.dispatch(resizeHeaderForMobileActionCreator)
+    let resizeHeader = (windowSize) => {
+        appReducer.dispatch(resizeHeaderActionCreator(windowSize))
     };
-    let resizeHeaderForPC = () => {
-        appReducer.dispatch(resizeHeaderForPCActionCreator)
-    };
+
+    window.addEventListener('resize', resizeHeader(windowSize));
 
 
     return (
         <div className="App">
             <div className="portfolio">
-                {!store.state.appReducer.smallHeaderMenu && <Header {resizeHeaderForMobile} />}
-                {store.state.appReducer.smallHeaderMenu && <HeaderMini {resizeHeaderForPC}/>}
-                {/*<HeaderMini/>*/}
-                {/*<Header/>*/}
+                {store.state.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
                 <Main/>
                 <Skills/>
                 <Projects/>
@@ -40,6 +41,6 @@ const App = (store) => {
             </div>
         </div>
     );
-}
+};
 
 export default App;

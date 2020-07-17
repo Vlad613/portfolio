@@ -7,7 +7,6 @@ import HeaderMini from "./HeaderMini/HeaderMini";
 
 const  Header=()=> {
     return (
-        window.addEventListener('resize', resizeHeaderForMobile())
         <div className={styles.headerBlock}>
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
