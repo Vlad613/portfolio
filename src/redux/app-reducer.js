@@ -1,15 +1,17 @@
 const RESIZE_HEADER = 'RESIZE-HEADER';
 
-const initialState = {appWindowSize: 4000};
+const initialState = {appWindowSize: typeof window==='object' ? window.innerWidth : null};
 
 
 const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case RESIZE_HEADER:
-            debugger
-            state.appWindowSize = action.windowSize;
-            return state;
+            // state.appWindowSize = action.windowSize;
+            // return state;
+            return  Object.assign({},state,{
+                appWindowSize: action.windowSize
+            });
 
         default:
             return state;
@@ -17,6 +19,6 @@ const appReducer = (state = initialState, action) => {
 
 };
 
-export const resizeHeaderActionCreator = (windowSize) => ({type: RESIZE_HEADER, windowSize: windowSize});
+export const resizeHeaderActionCreator = (width) => ({type: RESIZE_HEADER, windowSize: width});
 
 export default appReducer;

@@ -18,13 +18,16 @@ import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
 
 
 const App = (store) => {
-    let windowSize = window.innerWidth;
+    // let windowSize = window.innerWidth;
+    //
+    // let resizeHeader = (windowSize) => {
+    //     appReducer.dispatch(resizeHeaderActionCreator(windowSize))
+    // };
 
-    let resizeHeader = (windowSize) => {
-        appReducer.dispatch(resizeHeaderActionCreator(windowSize))
-    };
-
-    window.addEventListener('resize', resizeHeader(windowSize));
+    // window.addEventListener('resize', resizeHeader(windowSize));
+    window.addEventListener('resize',()=>{
+        appReducer.dispatch(resizeHeaderActionCreator(window.innerWidth))
+    });
 
 
     return (
