@@ -1,16 +1,14 @@
 const RESIZE_HEADER = 'RESIZE-HEADER';
 
-const initialState = {appWindowSize: 4000};
+const initialState = {appWindowSize: window.innerWidth};
 
 
 const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case RESIZE_HEADER:
-            debugger
             state.appWindowSize = action.windowSize;
             return state;
-
         default:
             return state;
     }
