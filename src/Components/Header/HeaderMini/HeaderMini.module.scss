@@ -1,0 +1,100 @@
+.headerMiniBlock {
+  position: fixed !important;
+  background-color: #fff;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem 0;
+
+  .headerMiniContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    .navBarLogo {
+      color: rgba(0, 0, 0, .9);
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-family: 'Josefin Sans', sans-serif;
+      margin-right: auto !important;
+      display: inline-block;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+
+    .headerMiniDtlRow {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+      position: relative;
+
+
+      .headerMiniBtn {
+        outline: none;
+        padding: 0;
+        border: none;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border-radius: .25rem;
+
+        .svgContainer {
+          display: flex;
+          cursor: pointer;
+          -webkit-tap-highlight-color: transparent;
+          transition: transform 400ms;
+          user-select: none;
+          overflow: hidden;
+          vertical-align: middle;
+
+          .lineTop {
+            stroke-dasharray: 40 139;
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #212529;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+          }
+
+          .lineMiddle {
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #212529;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+          }
+
+          .lineBottom {
+            stroke-dasharray: 40 180;
+            fill: none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: #212529;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+          }
+        }
+      }
+    }
+
+    &::after {
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      content: "";
+      bottom: 0;
+    }
+  }
+}

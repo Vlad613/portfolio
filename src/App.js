@@ -8,38 +8,38 @@ import Slogan from "./Components/Slogan/Slogan";
 import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
-import NavMenuMiniDetailed from "./Components/Header/HeaderMiniDetailed/NavMenuMiniDetailed";
+import appReducer from '../src/redux/app-reducer'
+import {resizeHeaderForMobileActionCreator, resizeHeaderForPCActionCreator} from "./redux/app-reducer";
+import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
 
 
-function App() {
+const App = (store) => {
 
-
-    let resizeHeaderForMobile =()=>{
-        let action ={type:'RESIZE-WINDOW-FOR-MOBILE'}
-        appReducer.dispatch(action)
+    let resizeHeaderForMobile = () => {
+        appReducer.dispatch(resizeHeaderForMobileActionCreator)
+    };
+    let resizeHeaderForPC = () => {
+        appReducer.dispatch(resizeHeaderForPCActionCreator)
     };
 
-    let resizeHeaderForPC =()=>{
-       let action ={type:'RESIZE-WINDOW-FOR-PC'}
-        appReducer.dispatch(action)
-    };
 
-
-  return (
-    <div className="App">
-      <div className="portfolio">
-        {/*<NavMenuMiniDetailed/>*/}
-        <Header/>
-        <Main/>
-        <Skills/>
-        <Projects/>
-        <Slogan/>
-        <ContactsForm/>
-        <Contacts/>
-        <Footer/>
-      </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="portfolio">
+                {!store.state.appReducer.smallHeaderMenu && <Header {resizeHeaderForMobile} />}
+                {store.state.appReducer.smallHeaderMenu && <HeaderMini {resizeHeaderForPC}/>}
+                {/*<HeaderMini/>*/}
+                {/*<Header/>*/}
+                <Main/>
+                <Skills/>
+                <Projects/>
+                <Slogan/>
+                <ContactsForm/>
+                <Contacts/>
+                <Footer/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

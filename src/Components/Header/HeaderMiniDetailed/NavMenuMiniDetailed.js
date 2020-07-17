@@ -3,7 +3,6 @@ import styles from './NavMenuMiniDetailed.module.scss';
 import styleContainer from "../../../common/styles/Container.module.css";
 
 
-
 class NavMenuMiniDetailed extends Component {
 
     state = [
@@ -19,7 +18,7 @@ class NavMenuMiniDetailed extends Component {
                 <div className={`${styleContainer.container} ${styles.headerContainer}`}>
 
                     <div className={styles.navMenuMiniDtlRow}>
-                    <a className={styles.navBarLogo}>Vlad</a>
+                        <a className={styles.navBarLogo}>Vlad</a>
                         <button className={styles.navBarBtn}>
                             <svg className={styles.svgContainer} viewBox="0 0 100 100" width="60">
                                 <path className={styles.lineTop}

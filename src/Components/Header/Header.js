@@ -2,11 +2,12 @@ import React from 'react';
 import styles from './Header.module.scss';
 import NavMenu from "./NavMenu/NavMenu";
 import styleContainer from "../../common/styles/Container.module.css";
-import NavMenuMini from "./NavMenuMini/NavMenuMini";
+import HeaderMini from "./HeaderMini/HeaderMini";
 
 
-function Header() {
+const  Header=()=> {
     return (
+        window.addEventListener('resize', resizeHeaderForMobile())
         <div className={styles.headerBlock}>
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
@@ -16,6 +17,6 @@ function Header() {
             </div>
         </div>
     );
-}
+};
 
 export default Header;
