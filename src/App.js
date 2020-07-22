@@ -8,21 +8,20 @@ import Slogan from "./Components/Slogan/Slogan";
 import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
-import appReducer from '../src/redux/app-reducer'
-import {
-    // resizeHeaderForMobileActionCreator,
-    // resizeHeaderForPCActionCreator,
-    resizeHeaderActionCreator
-} from "./redux/app-reducer";
+import {resizeHeaderActionCreator} from "./redux/app-reducer";
 import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
+import {useDispatch} from 'react-redux';
+
 
 
 const App = (store) => {
+debugger
+    const dispatch = useDispatch();
 
-
+debugger
     let resizeHeader = () => {
         let windowSize = window.innerWidth;
-        appReducer.dispatch(resizeHeaderActionCreator(windowSize))
+        dispatch(resizeHeaderActionCreator(windowSize))
     };
 
     window.addEventListener('resize', resizeHeader);

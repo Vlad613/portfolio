@@ -7,8 +7,10 @@ const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case RESIZE_HEADER:
-            state.appWindowSize = action.windowSize;
-            return state;
+            return {
+                state,
+                appWindowSize: action.windowSize
+            };
         default:
             return state;
     }
