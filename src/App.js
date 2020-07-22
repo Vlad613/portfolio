@@ -29,7 +29,6 @@ const App = (props) => {
     // debugger
     window.addEventListener('resize', props.resizeHeader);
 
-
     return (
         <div className="App">
             <div className="portfolio">
