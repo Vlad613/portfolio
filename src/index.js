@@ -5,11 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/redux-store';
 import { Provider } from 'react-redux';
+import AppContainer from "./AppContainer";
 
 
 ReactDOM.render(
     <Provider store={store}>
-        <App state={store.getState()}/>,
+        <AppContainer
+            // state={store.getState()}
+            store={store}
+        />,
 
     </Provider>,
 document.getElementById('root')

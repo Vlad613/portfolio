@@ -11,27 +11,29 @@ import Contacts from "./Components/SocialNetwork/Contacts";
 import appReducer from '../src/redux/app-reducer'
 import {resizeHeaderActionCreator} from "./redux/app-reducer";
 import {useDispatch} from 'react-redux';
+import {connect} from 'react-redux';
 import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
 
 
 const App = (props) => {
 
-    const  dispatch= useDispatch();
+    // const state = props.store.getState();
+    // const dispatch = useDispatch();
 
-debugger
-    let resizeHeader = () => {
-
-        let windowSize = window.innerWidth;
-       dispatch(resizeHeaderActionCreator(windowSize))
-    };
-debugger
-    window.addEventListener('resize', resizeHeader);
+    // debugger
+    // let resizeHeader = () => {
+    //
+    //     let windowSize = window.innerWidth;
+    //     dispatch(resizeHeaderActionCreator(windowSize))
+    // };
+    // debugger
+    window.addEventListener('resize', props.resizeHeader);
 
 
     return (
         <div className="App">
             <div className="portfolio">
-                {props.state.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
+                {props.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
                 <Main/>
                 <Skills/>
                 <Projects/>
@@ -43,5 +45,7 @@ debugger
         </div>
     );
 };
+
+
 
 export default App;

@@ -7,11 +7,7 @@ const appReducer = (state = initialState, action) => {
 debugger
     switch (action.type) {
         case RESIZE_HEADER:
-            return {
-                // ...state,
-                // appWindowSize: action.windowSize
-               ...state, appWindowSize: action.windowSize
-            };
+            state.appWindowSize = action.windowSize;
         default:
             return state;
     }
