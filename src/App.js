@@ -30,7 +30,8 @@ debugger
     return (
         <div className="App">
             <div className="portfolio">
-                {store.state.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
+
+                {store.store.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
                 <Main/>
                 <Skills/>
                 <Projects/>

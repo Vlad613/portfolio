@@ -13,7 +13,7 @@ ReactDOM.render(
     >
         <App
             // store={store}
-              state={store.getState()}
+            store={store.getState()}
         />
     </Provider>,
     document.getElementById('root'));
