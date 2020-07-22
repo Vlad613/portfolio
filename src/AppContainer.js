@@ -5,15 +5,6 @@ import {connect} from 'react-redux';
 import App from "./App";
 
 
-// const dispatch = useDispatch();
-// debugger
-// let resizeHeader = () => {
-//
-//     let windowSize = window.innerWidth;
-//     dispatch(resizeHeaderActionCreator(windowSize))
-// };
-// debugger
-
 let mapStateToProps = (state) => {
     return {
         appReducer: state.appReducer
