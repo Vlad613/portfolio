@@ -6,18 +6,18 @@ import App from "./App";
 
 
 let mapStateToProps = (state) => {
-    return {
-        appReducer: state.appReducer
-    }
+    // return {
+    //     appReducer: state.appReducer
+    // }
 };
 
 let mapDispatchToProps = (dispatch) => {
-    return {
-        resizeHeader: () => {
-            let windowSize = window.innerWidth;
-            dispatch(resizeHeaderActionCreator(windowSize));
-        }
-    }
+    // return {
+    //     resizeHeader: () => {
+    //         let windowSize = window.innerWidth;
+    //         dispatch(resizeHeaderActionCreator(windowSize));
+    //     }
+    // }
 };
 
 const AppContainer = connect(mapStateToProps, mapDispatchToProps)(App);

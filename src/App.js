@@ -8,17 +8,17 @@ import Slogan from "./Components/Slogan/Slogan";
 import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
-import NavMenuMini from "./Components/Header/NavMenuMini/NavMenuMini";
+import HeaderContainer from "./Components/Header/HeaderContainer";
 
 
 const App = (props) => {
 
-    window.addEventListener('resize', props.resizeHeader);
+
 
     return (
         <div className="App">
             <div className="portfolio">
-                {props.appReducer.appWindowSize >= 1000 ? <Header/> : <Header/>}
+                <HeaderContainer/>
                 <Main/>
                 <Skills/>
                 <Projects/>

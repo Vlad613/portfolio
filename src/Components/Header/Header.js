@@ -5,15 +5,15 @@ import styleContainer from "../../common/styles/Container.module.css";
 import NavMenuMini from "./NavMenuMini/NavMenuMini";
 
 
-const  Header=()=> {
+const  Header=(props)=> {
+    window.addEventListener('resize', props.resizeHeader);
     return (
         <div className={styles.headerBlock}>
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
-                <div className={styles.headerMiniDtlRow}>
+                <div className={styles.headerDtlRow}>
                 <a className={styles.navBarLogo}>Vlad</a>
-                {/*<NavMenu/>*/}
-                    <NavMenuMini/>
+                    {props.headerReducer.appWindowSize >= 1000 ?  <NavMenu/> :  <NavMenuMini/>}
                 </div>
             </div>
         </div>

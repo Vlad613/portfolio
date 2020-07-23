@@ -1,8 +1,4 @@
-.navMenu {
-  flex-grow: 1;
-  align-items: center;
-
-  .navBarNav {
+.navBarNav {
     margin-left: auto !important;
     display: flex;
     padding-left: 0;
@@ -61,4 +57,3 @@
     display: flex !important;
     flex-basis: auto;
   }
-}
