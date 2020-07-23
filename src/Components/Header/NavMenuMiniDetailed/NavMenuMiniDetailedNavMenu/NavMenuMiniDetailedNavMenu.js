@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styles from './NavMenuMiniDetailedNavMenu.module.scss';
 
 
-class NavMenuMiniDetailedNavMeni extends Component {
+class NavMenuMiniDetailedNavMenu extends Component {
 
     state = [
         {main: false},
@@ -60,6 +60,6 @@ class NavMenuMiniDetailedNavMeni extends Component {
     }
 }
 
-export default NavMenuMiniDetailedNavMeni;
+export default NavMenuMiniDetailedNavMenu;
 
 

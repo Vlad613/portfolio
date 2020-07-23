@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Header.module.scss';
 import NavMenu from "./NavMenu/NavMenu";
 import styleContainer from "../../common/styles/Container.module.css";
-import NavMenuMini from "./NavMenuMini/NavMenuMini";
+import NavMenuMiniButton from "./NavMenuMiniButton/NavMenuMiniButton";
 import NavMenuMiniDetailedButton from "./NavMenuMiniDetailed/NavMenuMiniDetailedButton/NavMenuMiniDetailedButton";
-import NavMenuMiniDetailedNavMeni from "./NavMenuMiniDetailed/NavMenuMiniDetailedNavMeni/NavMenuMiniDetailedNavMeni";
+import NavMenuMiniDetailedNavMenu from "./NavMenuMiniDetailed/NavMenuMiniDetailedNavMenu/NavMenuMiniDetailedNavMenu";
 
 
 const Header = (props) => {
@@ -21,7 +21,7 @@ const Header = (props) => {
                         :
                         <div>
                             {props.headerReducer.headerMiniNavMenuOpen === false ?
-                                <NavMenuMini openMiniNavMenu={props.openMiniNavMenu}/>
+                                <NavMenuMiniButton openMiniNavMenu={props.openMiniNavMenu}/>
                                 :
                                 <NavMenuMiniDetailedButton closeMimiNavMenu={props.closeMimiNavMenu}/>
                             }
@@ -29,7 +29,7 @@ const Header = (props) => {
                     }
                 </div>
                 {props.headerReducer.headerMiniNavMenuOpen === true ?
-                    <NavMenuMiniDetailedNavMeni/> : <></>
+                    <NavMenuMiniDetailedNavMenu/> : <></>
                 }
 
             </div>
