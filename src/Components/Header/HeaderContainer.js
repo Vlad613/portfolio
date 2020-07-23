@@ -3,6 +3,7 @@ import './Header.module.scss';
 import {resizeHeaderActionCreator} from "./../../redux/header-reducer";
 import {connect} from 'react-redux';
 import Header from "./Header.js";
+import {closeMimiNavMenuActionCreator, openMimiNavMenuActionCreator} from "../../redux/header-reducer";
 
 
 let mapStateToProps = (state) => {
@@ -16,7 +17,13 @@ let mapDispatchToProps = (dispatch) => {
         resizeHeader: () => {
             let windowSize = window.innerWidth;
             dispatch(resizeHeaderActionCreator(windowSize));
-        }
+        },
+        openMiniNavMenu: () => {
+            dispatch(openMimiNavMenuActionCreator());
+        },
+        closeMimiNavMenu: () => {
+            dispatch(closeMimiNavMenuActionCreator());
+        },
     }
 };
 
