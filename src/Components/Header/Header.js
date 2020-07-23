@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import NavMenu from "./NavMenu/NavMenu";
+import NavMenuPc from "./NavMenuPc/NavMenuPc";
 import styleContainer from "../../common/styles/Container.module.css";
-import NavMenuMiniButton from "./NavMenuMiniButton/NavMenuMiniButton";
+import HeaderMiniButton from "./HeaderMiniButton/HeaderMiniButton";
 import NavMenuMiniDetailedButton from "./NavMenuMiniDetailed/NavMenuMiniDetailedButton/NavMenuMiniDetailedButton";
 import NavMenuMiniDetailedNavMenu from "./NavMenuMiniDetailed/NavMenuMiniDetailedNavMenu/NavMenuMiniDetailedNavMenu";
 
@@ -17,11 +17,11 @@ const Header = (props) => {
                     <a className={styles.navBarLogo}>Vlad</a>
 
                     {props.headerReducer.appWindowSize >= 1000 ?
-                        <NavMenu/>
+                        <NavMenuPc/>
                         :
                         <div>
                             {props.headerReducer.headerMiniNavMenuOpen === false ?
-                                <NavMenuMiniButton openMiniNavMenu={props.openMiniNavMenu}/>
+                                <HeaderMiniButton openMiniNavMenu={props.openMiniNavMenu}/>
                                 :
                                 <NavMenuMiniDetailedButton closeMimiNavMenu={props.closeMimiNavMenu}/>
                             }

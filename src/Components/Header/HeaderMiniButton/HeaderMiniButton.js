@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './NavMenuMiniButton.module.scss';
+import styles from './HeaderMiniButton.module.scss';
 
 
-function NavMenuMiniButton(props) {
+function HeaderMiniButton(props) {
     return (
         <button className={styles.navMenuMiniBtn} onClick={props.openMiniNavMenu}>
             <svg className={styles.svgContainer} viewBox="0 0 100 100" width="60">
@@ -16,6 +16,6 @@ function NavMenuMiniButton(props) {
     )
 }
 
-export default NavMenuMiniButton;
+export default HeaderMiniButton;
 
 

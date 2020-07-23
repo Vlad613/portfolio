@@ -1,8 +1,8 @@
 import React, {Component, useState} from 'react';
-import styles from './NavMenu.module.scss';
+import styles from './LinksBlock.module.scss';
 
 
-class NavMenu extends Component {
+class LinksBlock extends Component {
 
     state = [
         {main: false},
@@ -12,8 +12,7 @@ class NavMenu extends Component {
 
     render() {
         return (
-            <ul className={styles.navBarNav}>
-
+            <>
                 {!this.state.main &&
                 <li onMouseOver={() => this.setState({main: true})}>
                     <a href=''
@@ -53,9 +52,9 @@ class NavMenu extends Component {
                 <li onMouseOut={() => this.setState({contacts: false})}>
                     <a href=''
                        className={styles.linkOnFocus}>CONTACTS</a></li>}
-            </ul>
+            </>
         );
     }
 }
 
-export default NavMenu;
+export default LinksBlock;

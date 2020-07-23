@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import styles from './NavMenuMiniDetailedNavMenu.module.scss';
-import LinksBlock from "../../NavMenu/LinksBlock";
+import React, {Component, useState} from 'react';
+import styles from './NavMenuPc.module.scss';
+import LinksBlock from "../NavMenu/LinksBlock";
 
 
-class NavMenuMiniDetailedNavMenu extends Component {
+class NavMenuPc extends Component {
 
     state = [
         {main: false},
@@ -13,6 +13,7 @@ class NavMenuMiniDetailedNavMenu extends Component {
 
     render() {
         return (
+
             <div className={styles.navBarNav}>
                 <LinksBlock/>
             </div>
@@ -20,6 +21,4 @@ class NavMenuMiniDetailedNavMenu extends Component {
     }
 }
 
-export default NavMenuMiniDetailedNavMenu;
-
-
+export default NavMenuPc;
