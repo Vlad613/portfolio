@@ -1,7 +1,5 @@
 const RESIZE_HEADER = 'RESIZE-HEADER';
-
 const initialState = {appWindowSize: window.innerWidth};
-
 
 const appReducer = (state = initialState, action) => {
 

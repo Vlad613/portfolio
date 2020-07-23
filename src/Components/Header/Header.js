@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import NavMenu from "./NavMenu/NavMenu";
 import styleContainer from "../../common/styles/Container.module.css";
-import HeaderMini from "./HeaderMini/HeaderMini";
+import NavMenuMini from "./NavMenuMini/NavMenuMini";
 
 
 const  Header=()=> {
@@ -10,9 +10,11 @@ const  Header=()=> {
         <div className={styles.headerBlock}>
 
             <div className={`${styleContainer.container} ${styles.headerContainer}`}>
+                <div className={styles.headerMiniDtlRow}>
                 <a className={styles.navBarLogo}>Vlad</a>
-                {/*<NavMenuMini/>*/}
-                <NavMenu/>
+                {/*<NavMenu/>*/}
+                    <NavMenuMini/>
+                </div>
             </div>
         </div>
     );

@@ -8,31 +8,17 @@ import Slogan from "./Components/Slogan/Slogan";
 import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
-import appReducer from '../src/redux/app-reducer'
-import {resizeHeaderActionCreator} from "./redux/app-reducer";
-import {useDispatch} from 'react-redux';
-import {connect} from 'react-redux';
-import HeaderMini from "./Components/Header/HeaderMini/HeaderMini";
+import NavMenuMini from "./Components/Header/NavMenuMini/NavMenuMini";
 
 
 const App = (props) => {
 
-    // const state = props.store.getState();
-    // const dispatch = useDispatch();
-
-    // debugger
-    // let resizeHeader = () => {
-    //
-    //     let windowSize = window.innerWidth;
-    //     dispatch(resizeHeaderActionCreator(windowSize))
-    // };
-    // debugger
     window.addEventListener('resize', props.resizeHeader);
 
     return (
         <div className="App">
             <div className="portfolio">
-                {props.appReducer.appWindowSize >= 1000 ? <Header/> : <HeaderMini/>}
+                {props.appReducer.appWindowSize >= 1000 ? <Header/> : <Header/>}
                 <Main/>
                 <Skills/>
                 <Projects/>
