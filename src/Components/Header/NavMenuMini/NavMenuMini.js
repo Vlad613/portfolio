@@ -4,12 +4,6 @@ import styles from './NavMenuMini.module.scss';
 
 class NavMenuMini extends Component {
 
-    state = [
-        {main: false},
-        {skills: false},
-        {projects: false},
-        {contacts: false}];
-
     render() {
         return (
             <button className={styles.navMenuMiniBtn}>
