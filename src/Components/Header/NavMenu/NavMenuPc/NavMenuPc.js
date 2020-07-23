@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import styles from './NavMenuPc.module.scss';
-import LinksBlock from "../NavMenu/LinksBlock";
+import LinksBlock from "../LinksBlock/LinksBlock";
 
 
 class NavMenuPc extends Component {

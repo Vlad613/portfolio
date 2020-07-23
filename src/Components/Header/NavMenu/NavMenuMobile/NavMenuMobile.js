@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import styles from './NavMenuMiniDetailedNavMenu.module.scss';
-import LinksBlock from "../../NavMenu/LinksBlock";
+import styles from './NavMenuMobile.module.scss';
+import LinksBlock from "../LinksBlock/LinksBlock";
 
 
-class NavMenuMiniDetailedNavMenu extends Component {
+class NavMenuMobile extends Component {
 
     state = [
         {main: false},
@@ -20,6 +20,6 @@ class NavMenuMiniDetailedNavMenu extends Component {
     }
 }
 
-export default NavMenuMiniDetailedNavMenu;
+export default NavMenuMobile;
 
 
