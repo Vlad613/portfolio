@@ -9,6 +9,7 @@ import ContactsForm from "./Components/ContactsForm/ContactsForm";
 import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
 import HeaderContainer from "./Components/Header/HeaderContainer";
+import AboutMe from "./Components/AboutMe/AboutMe";
 
 
 const App = (props) => {
@@ -20,6 +21,7 @@ const App = (props) => {
             <div className="portfolio">
                 <HeaderContainer/>
                 <Main/>
+                <AboutMe/>
                 <Skills/>
                 <Projects/>
                 <Slogan/>

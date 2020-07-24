@@ -10,7 +10,10 @@
   text-decoration: none;
   padding: .5rem 1rem;
   font-family: 'Open Sans', sans-serif;
-
+  &:hover{
+    color: rgba(0,0,0,.7);
+    opacity: 1;
+  }
 }
 
 .linkOnFocus {
@@ -25,10 +28,7 @@
   text-decoration: none;
   padding: .5rem 1rem;
   font-family: 'Open Sans', sans-serif;
-  //&:hover{
-  //  color: rgba(0,0,0,.7);
-  //  opacity: 1;
-  //}
+
 
 
   &::after {

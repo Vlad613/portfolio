@@ -4,7 +4,7 @@ import styleContainer from "../../common/styles/Container.module.css";
 import Title from "../../common/components/Title/Title";
 
 
-function ContactsForm() {
+let ContactsForm=()=> {
     return (
         <div className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
