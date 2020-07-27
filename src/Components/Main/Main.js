@@ -26,6 +26,6 @@ let Main = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Main;
