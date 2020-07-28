@@ -13,7 +13,7 @@ let Main = () => {
     };
 
     return (
-        <div className={styles.mainBlock}>
+        <div id='main' className={styles.mainBlock}>
             <Fade>
             <div className={styles.mainBlockPhoto} style={MainPhoto}>
                 <div className={`${styleContainer.container} ${styles.mainContainer}`}>

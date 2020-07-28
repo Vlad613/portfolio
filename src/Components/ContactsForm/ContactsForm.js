@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 
 let ContactsForm = () => {
     return (
-        <div className={styles.contactsBlock}>
+        <div id='contactsForm' className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
                 <Title text='Contacts' titleSpan='SAY HELLO'/>
 

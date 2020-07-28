@@ -18,7 +18,7 @@ let Projects = () => {
     };
     const socialNetworkHref = 'https://vlad613.github.io/social_network/'
     return (
-        <div className={styles.projectsBlock}>
+        <div id='projects' className={styles.projectsBlock}>
 
                 <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                     <Title text='Projects' titleSpan='PORTFOLIO'/>

@@ -22,7 +22,7 @@ let Skills = () => {
     };
 
     return (
-        <div className={styles.skillsBlock}>
+        <div id='skills' className={styles.skillsBlock}>
 
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
 

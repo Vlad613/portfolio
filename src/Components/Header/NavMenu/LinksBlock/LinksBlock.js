@@ -1,60 +1,58 @@
-import React, {Component, useState} from 'react';
+import React from 'react';
 import styles from './LinksBlock.module.scss';
+import {Link} from "react-scroll";
 
 
-class LinksBlock extends Component {
+function LinksBlock() {
+    return (
+        <>
+            <li>
+                <Link
+                    activeClass={styles.linkOnFocus}
+                    to="main"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    href=''
+                    className={styles.link}>MAIN</Link>
 
-    state = [
-        {main: false},
-        {skills: false},
-        {projects: false},
-        {contacts: false}];
-
-    render() {
-        return (
-            <>
-                {!this.state.main &&
-                <li onClick={() => this.setState({main: true})}>
-                    <a href=''
-                       className={styles.link}>MAIN</a></li>}
-
-                {this.state.main &&
-                <li onBlur={() => this.setState({main: false})}>
-                    <a href=''
-                       className={styles.linkOnFocus}>MAIN</a></li>}
-
-                {!this.state.skills &&
-                <li onClick={() => this.setState({skills: true})}>
-                    <a href=''
-                       className={styles.link}>SKILLS</a></li>}
-
-                {this.state.skills &&
-                <li onBlur={() => this.setState({skills: false})}>
-                    <a href=''
-                       className={styles.linkOnFocus}>SKILLS</a></li>}
-
-                {!this.state.projects &&
-                <li onClick={() => this.setState({projects: true})}>
-                    <a href=''
-                       className={styles.link}>PROJECTS</a></li>}
-
-                {this.state.projects &&
-                <li onBlur={() => this.setState({projects: false})}>
-                    <a href=''
-                       className={styles.linkOnFocus}>PROJECTS</a></li>}
-
-                {!this.state.contacts &&
-                <li onClick={() => this.setState({contacts: true})}>
-                    <a href=''
-                       className={styles.link}>CONTACTS</a></li>}
-
-                {this.state.contacts &&
-                <li onBlur={() => this.setState({contacts: false})}>
-                    <a href=''
-                       className={styles.linkOnFocus}>CONTACTS</a></li>}
-            </>
-        );
-    }
+            </li>
+            <li>
+                <Link
+                    activeClass={styles.linkOnFocus}
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    href=''
+                    className={styles.link}>SKILLS</Link>
+            </li>
+            <li>
+                <Link
+                    activeClass={styles.linkOnFocus}
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    href=''
+                    className={styles.link}>PROJECTS</Link>
+            </li>
+            <li>
+                <Link
+                    activeClass={styles.linkOnFocus}
+                    to="contactsForm"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    href=''
+                    className={styles.link}>CONTACTS</Link>
+            </li>
+        </>
+    );
 }
 
 export default LinksBlock;

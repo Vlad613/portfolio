@@ -1,6 +1,6 @@
 .AboutMeBlock {
   opacity: 1;
-  visibility: collapse;
+  visibility: visible;
   transform: translateY(0px);
   margin: 0 auto;
   background: #fff;
@@ -12,6 +12,9 @@
   transition: 0.5s;
   padding: 0 !important;
   max-width: 900px;
+  //&:hover{
+  //  visibility: visible;
+  //}
 
 
   &::before {
@@ -71,7 +74,6 @@
           letter-spacing: 2px;
           color: #333;
           line-height: 1.2;
-
         }
 
         p {
@@ -81,11 +83,6 @@
           margin-top: 1.5rem !important;
           font-weight: 300 !important;
           font-size: 20px;
-
-
-
-
-
         }
       }
 
@@ -108,8 +105,6 @@
           position: relative;
           border-radius: 50%;
           background-color: #fff;
-          //border: 1px solid #dee2e6;
-          //padding: .25rem;
           max-width: 100%;
           vertical-align: middle;
         }
@@ -124,13 +119,9 @@
         flex-wrap: wrap;
       }
     }
-
-
   }
 }
-.AboutMeBlockIn{
-  visibility: visible;
-}
+
 
 
 
