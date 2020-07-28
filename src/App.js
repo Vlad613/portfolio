@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
@@ -13,7 +12,6 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 
 
 const App = (props) => {
-
 
 
     return (
@@ -32,7 +30,6 @@ const App = (props) => {
         </div>
     );
 };
-
 
 
 export default App;

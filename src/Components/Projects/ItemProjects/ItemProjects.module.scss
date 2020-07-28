@@ -2,11 +2,11 @@
 
 .itemProject {
   width: 450px;
-  background-color: $mainColorOne;
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
   margin: 0.5rem;
+  background-color: $mainColorTwo;
 
 
   .itemProjectsImage {

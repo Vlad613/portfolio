@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Title.module.scss"
 
 
-function Title(props) {
+ const Title=(props)=> {
     return (
         <div className={styles.titleBlock}>
             <span>{props.titleSpan}</span>

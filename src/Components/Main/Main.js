@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Main.module.scss';
 import styleContainer from '../../common/styles/Container.module.css'
 import MainPhotoTest from '../../assets/image/MainPhotoTest.jpg'
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -13,6 +14,7 @@ let Main = () => {
 
     return (
         <div className={styles.mainBlock}>
+            <Fade>
             <div className={styles.mainBlockPhoto} style={MainPhoto}>
                 <div className={`${styleContainer.container} ${styles.mainContainer}`}>
 
@@ -24,6 +26,7 @@ let Main = () => {
 
                 </div>
             </div>
+            </Fade>
         </div>
     );
 };
