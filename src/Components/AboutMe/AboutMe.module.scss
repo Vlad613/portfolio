@@ -1,6 +1,6 @@
 .AboutMeBlock {
   opacity: 1;
-  visibility: visible;
+  visibility: collapse;
   transform: translateY(0px);
   margin: 0 auto;
   background: #fff;
@@ -127,6 +127,9 @@
 
 
   }
+}
+.AboutMeBlockIn{
+  visibility: visible;
 }
 
 
