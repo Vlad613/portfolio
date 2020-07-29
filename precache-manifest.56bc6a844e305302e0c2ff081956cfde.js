@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ffa9d663ca68b5815c325788873f302",
+    "revision": "6c5028e03bbc0c6530820ed035e87485",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "722ba9c29d67ffcdaeb2",
-    "url": "/portfolio/static/css/main.59a5847c.chunk.css"
+    "revision": "0c2abe7a41e6854a6c72",
+    "url": "/portfolio/static/css/main.82900d77.chunk.css"
   },
   {
-    "revision": "687fede11e39864396ea",
-    "url": "/portfolio/static/js/2.44dd66ec.chunk.js"
+    "revision": "1675f576158670913bc5",
+    "url": "/portfolio/static/js/2.efeffb42.chunk.js"
   },
   {
-    "revision": "722ba9c29d67ffcdaeb2",
-    "url": "/portfolio/static/js/main.b33d4287.chunk.js"
+    "revision": "0c2abe7a41e6854a6c72",
+    "url": "/portfolio/static/js/main.2cf42dab.chunk.js"
   },
   {
     "revision": "fb4ef41b379f7c47d959",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8b8524a46e91c819bc7a33d13c1daa6b",
     "url": "/portfolio/static/media/JS.8b8524a4.jpg"
+  },
+  {
+    "revision": "c06336ac57a7fb450ed3901399287f1d",
+    "url": "/portfolio/static/media/MainPhotoMiniTest.c06336ac.jpg"
   },
   {
     "revision": "245144c31d773c5c5d62cf0a633b870e",
@@ -40,12 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/freelanceJob.ac16d3ea.jpg"
   },
   {
+    "revision": "82d7981e278b54caafab37ec43eb4421",
+    "url": "/portfolio/static/media/html_css.82d7981e.jpg"
+  },
+  {
     "revision": "ea47cbc12221adbd2527d1a2d170e54d",
     "url": "/portfolio/static/media/mail.ea47cbc1.jpg"
   },
   {
     "revision": "e90d90382f365befe9f0640627274222",
     "url": "/portfolio/static/media/redux.e90d9038.jpg"
+  },
+  {
+    "revision": "7268fbe55fe87e2639ec5a7da10ae796",
+    "url": "/portfolio/static/media/telegram.7268fbe5.jpg"
   },
   {
     "revision": "485af2a6e490957a8f39982aa2465d4d",
