@@ -21,6 +21,17 @@ function LinksBlock() {
             <li>
                 <Link
                     activeClass={styles.linkOnFocus}
+                    to="aboutMe"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    href=''
+                    className={styles.link}>ABOUT ME</Link>
+            </li>
+            <li>
+                <Link
+                    activeClass={styles.linkOnFocus}
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -29,6 +40,7 @@ function LinksBlock() {
                     href=''
                     className={styles.link}>SKILLS</Link>
             </li>
+
             <li>
                 <Link
                     activeClass={styles.linkOnFocus}

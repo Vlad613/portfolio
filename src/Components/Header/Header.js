@@ -6,14 +6,25 @@ import RollUpButton from "./HeaderButton/RollUpButton/RollUpButton";
 import DeployedButton from "./HeaderButton/DeployedButton/DeployedButton";
 import NavMenuMobile from "./NavMenu/NavMenuMobile/NavMenuMobile";
 import Slide from 'react-reveal/Slide';
+import {useState} from "react"
 
 
 const Header = (props) => {
     window.addEventListener('resize', props.resizeHeader);
-    return (
-        <Slide top>
-            <div className={styles.headerBlock}>
 
+    const [headerActive, setHeaderActive] = useState(false);
+debugger
+    const onScroll = () => {{
+            window.scrollY > 300 ?
+                setHeaderActive(true) : setHeaderActive(false);
+        }};
+
+    window.addEventListener('scroll', onScroll);
+
+
+    return (
+        <Slide top when={headerActive}>
+            <div className={headerActive ? `${styles.headerBlock} ${styles.headerBlockIn}` : styles.headerBlock}>
                 <div className={`${styleContainer.container} ${styles.headerContainer}`}>
                     <div className={styles.headerDtlRow}>
                         <a className={styles.navBarLogo}>Vlad</a>

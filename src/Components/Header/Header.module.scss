@@ -1,11 +1,12 @@
 .headerBlock {
-  position: fixed !important;
-  background-color: #fff;
-  z-index: 98;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  left: 0;
-  right: 0;
+  display: none;
+  //position: fixed !important;
+  //background-color: #fff;
+  //z-index: 150;
+  //padding-top: 15px;
+  //padding-bottom: 15px;
+  //left: 0;
+  //right: 0;
 
   .headerContainer {
     display: flex;
@@ -71,6 +72,17 @@
     content: "";
     bottom: 0;
   }
+}
+
+.headerBlockIn {
+  display: flex;
+  position: fixed !important;
+  background-color: #fff;
+  z-index: 150;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  left: 0;
+  right: 0;
 }
 
 
