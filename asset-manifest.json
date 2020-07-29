@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.49dd873f.chunk.css",
-    "main.js": "/portfolio/static/js/main.2cf42dab.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2cf42dab.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.79dba908.chunk.css",
+    "main.js": "/portfolio/static/js/main.bce029f7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bce029f7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.971f9005.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.971f9005.js.map",
-    "static/js/2.efeffb42.chunk.js": "/portfolio/static/js/2.efeffb42.chunk.js",
-    "static/js/2.efeffb42.chunk.js.map": "/portfolio/static/js/2.efeffb42.chunk.js.map",
+    "static/js/2.1932d77a.chunk.js": "/portfolio/static/js/2.1932d77a.chunk.js",
+    "static/js/2.1932d77a.chunk.js.map": "/portfolio/static/js/2.1932d77a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1caecf1c06e2396e7d5ffb39709824c3.js": "/portfolio/precache-manifest.1caecf1c06e2396e7d5ffb39709824c3.js",
+    "precache-manifest.681cc8fce3d0d78fc0431c4d8646073d.js": "/portfolio/precache-manifest.681cc8fce3d0d78fc0431c4d8646073d.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.49dd873f.chunk.css.map": "/portfolio/static/css/main.49dd873f.chunk.css.map",
+    "static/css/main.79dba908.chunk.css.map": "/portfolio/static/css/main.79dba908.chunk.css.map",
     "static/media/JS.jpg": "/portfolio/static/media/JS.8b8524a4.jpg",
     "static/media/MainPhotoMiniTest.jpg": "/portfolio/static/media/MainPhotoMiniTest.c06336ac.jpg",
     "static/media/MainPhotoTest.jpg": "/portfolio/static/media/MainPhotoTest.245144c3.jpg",
@@ -18,16 +18,16 @@
     "static/media/facebook.jpg": "/portfolio/static/media/facebook.0dfae155.jpg",
     "static/media/freelanceJob.jpg": "/portfolio/static/media/freelanceJob.ac16d3ea.jpg",
     "static/media/html_css.jpg": "/portfolio/static/media/html_css.82d7981e.jpg",
-    "static/media/mail.jpg": "/portfolio/static/media/mail.ea47cbc1.jpg",
+    "static/media/mail.jpg": "/portfolio/static/media/mail.eb00d55c.jpg",
     "static/media/redux.jpg": "/portfolio/static/media/redux.e90d9038.jpg",
     "static/media/telegram.jpg": "/portfolio/static/media/telegram.7268fbe5.jpg",
-    "static/media/telephone.jpg": "/portfolio/static/media/telephone.485af2a6.jpg",
+    "static/media/telephone.jpg": "/portfolio/static/media/telephone.b1fe4184.jpg",
     "static/media/toDoList.jpg": "/portfolio/static/media/toDoList.66d13e6e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.971f9005.js",
-    "static/js/2.efeffb42.chunk.js",
-    "static/css/main.49dd873f.chunk.css",
-    "static/js/main.2cf42dab.chunk.js"
+    "static/js/2.1932d77a.chunk.js",
+    "static/css/main.79dba908.chunk.css",
+    "static/js/main.bce029f7.chunk.js"
   ]
 }
