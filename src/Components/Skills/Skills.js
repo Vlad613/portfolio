@@ -6,6 +6,7 @@ import Title from "../../common/components/Title/Title";
 import JsIcon from '../../assets/image/skillsIkons/JS.jpg'
 import ReactIcon from '../../assets/image/skillsIkons/react.jpg'
 import ReduxIcon from '../../assets/image/skillsIkons/redux.jpg'
+import HtmlIcon from '../../assets/image/skillsIkons/html_css.jpg'
 import Slide from "react-reveal/Fade";
 
 
@@ -20,6 +21,9 @@ let Skills = () => {
     const reduxIcon = {
         backgroundImage: `url(${ReduxIcon})`,
     };
+    const htmlIcon = {
+        backgroundImage: `url(${HtmlIcon})`,
+    };
 
     return (
         <div id='skills' className={styles.skillsBlock}>
@@ -29,22 +33,22 @@ let Skills = () => {
                 <Title text='Skills' titleSpan='WHAT I DO'/>
                 <Slide left cascade>
                     <div className={styles.skills}>
+                        <div className={styles.animation}>
+                            <ItemSkills title={'HTML/CSS & SASS'}
+                                        style={htmlIcon}/>
+                        </div>
                         <div>
                             <ItemSkills title={'JS'}
-                                        description={'I learn'}
                                         style={jsIcon}/>
                         </div>
                         <div>
                             <ItemSkills title={'React'}
-                                        description={'I know'}
                                         style={reactIcon}/>
                         </div>
                         <div>
                             <ItemSkills title={'Redux'}
-                                        description={'I stink, that I know'}
                                         style={reduxIcon}/>
                         </div>
-
                     </div>
                 </Slide>
             </div>

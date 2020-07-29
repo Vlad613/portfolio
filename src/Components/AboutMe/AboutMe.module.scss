@@ -12,9 +12,8 @@
   transition: 0.5s;
   padding: 0 !important;
   max-width: 900px;
-  //&:hover{
-  //  visibility: visible;
-  //}
+
+
 
 
   &::before {
@@ -37,19 +36,20 @@
     background-color: #fff;
     border-radius: 5px;
     max-width: 100%;
+    flex-wrap: wrap;
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: -80px;
-      z-index: -354;
-      height: 200px;
-      width: 200px;
-      display: block;
-      background: url(../AboutMe/patternAboutMe.png);
-      background-size: 155px;
-      top: -80px;
-    }
+    //&::after {
+    //  content: "";
+    //  position: absolute;
+    //  right: -80px;
+    //  z-index: -354;
+    //  height: 50%;
+    //  width: 20vh;
+    //  display: block;
+    //  background: url(../AboutMe/patternAboutMe.png);
+    //  background-size: 155px;
+    //  top: -80px;
+    //}
 
     .AboutMeRow {
       display: flex;
@@ -107,6 +107,9 @@
           background-color: #fff;
           max-width: 100%;
           vertical-align: middle;
+          @media screen and (max-width: 1000px) {
+            display: none;
+          }
         }
 
         @media screen and (min-width: 768px) {
@@ -117,8 +120,15 @@
 
       @media screen and (max-width: 1000px) {
         flex-wrap: wrap;
+
       }
     }
+  }
+  @media screen and (max-width: 970px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 }
 

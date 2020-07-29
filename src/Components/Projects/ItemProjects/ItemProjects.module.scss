@@ -1,7 +1,9 @@
 @import '../../../common/styles/sass/variables';
 
 .itemProject {
+
   width: 450px;
+  //min-width: 320px;
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
@@ -45,6 +47,7 @@
       z-index: 1;
       box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.2);
       transition: all 0.3s ease-in-out 0s;
+      text-decoration: none;
       &:hover{
         transform: translateY(-5px);
         transition: all 0.5s;
@@ -70,6 +73,9 @@
     font-weight: 700 !important;
     text-align: center !important;
     margin-top: 1rem !important;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
   }
 }
 

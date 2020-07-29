@@ -12,7 +12,7 @@ const AboutMe = () => {
 
 
         return (
-            <Slide bottom>
+            <Slide bottom >
                 <div  className={styles.AboutMeBlock}>
                     <div className={styles.AboutMeContainer}>
                         <div className={styles.AboutMeRow}>

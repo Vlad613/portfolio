@@ -6,10 +6,11 @@
 }
 
 .socialNetworkContainer {
-    margin: 5% 0 5% 0;
+    margin: 2% 0 2% 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .footerText {
@@ -23,6 +24,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: row;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+.animation{
+    display: flex;
 }
 
 @media screen and (max-width: 1030px) {

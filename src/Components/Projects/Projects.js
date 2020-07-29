@@ -24,15 +24,15 @@ let Projects = () => {
                     <Title text='Projects' titleSpan='PORTFOLIO'/>
                     <Slide left cascade>
                     <div className={styles.projects}>
-                        <div>
+                        <div className={styles.animation}>
                         <ItemProjects href={socialNetworkHref}
                                       title={"Social network"}
-                                      description={"my work social network "}
+                                      description={"React, Redux, React-redux"}
                                       style={socialNetworkImage}/>
                         </div>
-                        <div>
+                        <div className={styles.animation}>
                         <ItemProjects title={"Todo list"}
-                                      description={"what i can do"}
+                                      description={"React, Redux, React-redux"}
                                       style={toDoLostImage}/>
                         </div>
                     </div>

@@ -10,9 +10,9 @@ let ItemSkills = (props) => {
                 {props.title}
             </h3>
 
-            <span className={styles.description}>
-                {props.description}
-            </span>
+            {/*<span className={styles.description}>*/}
+            {/*    {props.description}*/}
+            {/*</span>*/}
         </div>
     );
 }
