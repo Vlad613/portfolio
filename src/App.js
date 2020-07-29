@@ -9,28 +9,16 @@ import Footer from "./Components/Footer/Footer";
 import Contacts from "./Components/SocialNetwork/Contacts";
 import HeaderContainer from "./Components/Header/HeaderContainer";
 import AboutMe from "./Components/AboutMe/AboutMe";
-import {useState} from "react"
+
 
 const App = () => {
-
-    // const [state, setAboutMeActive] = useState({isAboutMeActive:false});
-    //
-    // const onScroll = () => {{
-    //     debugger
-    //     window.scrollY > 150?
-    //         setAboutMeActive({isAboutMeActive:true}):setAboutMeActive({isAboutMeActive:false});
-    // }};
-    // debugger
-    // window.addEventListener('scroll',onScroll);
 
     return (
         <div className="App">
             <div className="portfolio">
                 <HeaderContainer/>
                 <Main/>
-                <AboutMe
-                    // isAboutMeActive={state.isAboutMeActive}
-                />
+                <AboutMe/>
                 <Skills/>
                 <Projects/>
                 <Slogan/>

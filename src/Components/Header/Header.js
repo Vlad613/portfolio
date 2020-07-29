@@ -13,7 +13,7 @@ const Header = (props) => {
     window.addEventListener('resize', props.resizeHeader);
 
     const [headerActive, setHeaderActive] = useState(false);
-debugger
+
     const onScroll = () => {{
             window.scrollY > 300 ?
                 setHeaderActive(true) : setHeaderActive(false);

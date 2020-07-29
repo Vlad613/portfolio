@@ -28,5 +28,4 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 const HeaderContainer = connect(mapStateToProps, mapDispatchToProps)(Header);
-
 export default HeaderContainer;

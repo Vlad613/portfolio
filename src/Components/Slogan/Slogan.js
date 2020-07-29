@@ -21,7 +21,7 @@ const Slogan = () => {
                                 LET'S WORK TOGETHER!
                             </h2>
                             <div>
-                                <a href={''} className={styles.sloganBtn}>HIRE ME!</a>
+                                <a href='mailto:vladislav613zharnikov@gmail.com' className={styles.sloganBtn}>HIRE ME!</a>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ function LinksBlock() {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={400}
                     href=''
                     className={styles.link}>ABOUT ME</Link>
             </li>
