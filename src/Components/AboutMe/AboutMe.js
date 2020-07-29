@@ -3,6 +3,7 @@ import {useState} from 'react';
 import styles from './AboutMe.module.scss';
 import MainPhotoMiniTest from '../../assets/image/MainPhotoMiniTest.jpg';
 import Slide from 'react-reveal/Slide';
+import {Link} from "react-scroll";
 
 
 const AboutMe = () => {
@@ -12,8 +13,17 @@ const AboutMe = () => {
 
 
         return (
+            <Link
+                activeClass={styles.linkOnFocus}
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                href=''
+                className={styles.AboutMeBlock}>
             <Slide bottom >
-                <div  className={styles.AboutMeBlock}>
+                <div  id='aboutMe' className={styles.AboutMeBlock}>
                     <div className={styles.AboutMeContainer}>
                         <div className={styles.AboutMeRow}>
                             <div className={styles.AboutMeText}>
@@ -28,6 +38,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </Slide>
+            </Link>
         );
     }
 ;

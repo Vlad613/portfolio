@@ -4,12 +4,12 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/redux-store';
 import {Provider} from 'react-redux';
-import AppContainer from "./AppContainer";
+import App from "./App";
 
 
 ReactDOM.render(
     <Provider store={store}>
-        <AppContainer store={store}/>,
+        <App store={store}/>
     </Provider>,
     document.getElementById('root'));
 

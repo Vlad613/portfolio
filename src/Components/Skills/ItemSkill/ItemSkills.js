@@ -9,7 +9,6 @@ let ItemSkills = (props) => {
             <h3 className={styles.itemSkillsName}>
                 {props.title}
             </h3>
-
             {/*<span className={styles.description}>*/}
             {/*    {props.description}*/}
             {/*</span>*/}

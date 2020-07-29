@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   background-position: 50% 553px;
   margin: 0.5rem;
   padding: 1.5rem !important;
@@ -33,6 +32,14 @@
   }
 
   .itemSkillsName {
+    font: 400 16px/1.8 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    margin-top: 1rem!important;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 1.2;
 
   }
 
