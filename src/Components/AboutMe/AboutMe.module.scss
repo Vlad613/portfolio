@@ -131,6 +131,13 @@
   transition: 0.5s;
   padding: 0 !important;
   max-width: 900px;
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+  }
 }
 
 

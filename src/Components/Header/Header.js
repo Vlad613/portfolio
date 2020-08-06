@@ -24,7 +24,7 @@ const Header = (props) => {
 
     return (
         <Slide top when={headerActive}>
-            <div className={headerActive ? `${styles.headerBlock} ${styles.headerBlockIn}` : styles.headerBlock}>
+            <div className={styles.headerBlock}>
                 <div className={`${styleContainer.container} ${styles.headerContainer}`}>
                     <div className={styles.headerDtlRow}>
                         <a className={styles.navBarLogo}>Vlad</a>
