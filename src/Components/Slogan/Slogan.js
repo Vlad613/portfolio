@@ -12,7 +12,7 @@ const Slogan = () => {
 
 
     return (
-        <div className={styles.sloganBlock} style={FreelanceJob}>
+        <div id='contactsForm' className={styles.sloganBlock} style={FreelanceJob}>
             <div className={`${styleContainer.container} ${styles.sloganContainer}`}>
                 <Slide bottom>
                     <div>
