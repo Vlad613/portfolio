@@ -5,23 +5,35 @@ import Title from "../../common/components/Title/Title";
 import Slide from 'react-reveal/Slide';
 import {Field, reduxForm} from "redux-form";
 import * as axios from 'axios';
+import {minLengthCreator, requiredField} from "../../utils/validators/validators";
+import {Textarea} from "../../common/FormsControls/FormsControls";
 
 
 let ContactsForm = (props) => {
-    // const {handleSubmit, reset} = props;
     return (
         <form className={styles.contactsForm} onSubmit={props.handleSubmit}>
             <h5 className={styles.formTitle}>
                 Send Me Your Message</h5>
             <div className={styles.formInputs}>
-                <Field type="text" name='name' placeholder={"Your Name"} component={"input"}/>
-                <Field type="text" name='contact' placeholder={"Your Email"} component={"input"}/>
+                <Field type="text"
+                       name='name'
+                       placeholder={"Your Name"}
+                       component={"input"}
+                       validate={[requiredField]}/>
+                <Field type="text"
+                       name='contact'
+                       placeholder={"Your Email"}
+                       component={"input"}/>
             </div>
-            <div className={styles.formText}>
-                <Field name='message' placeholder={"Your message..."} component={"textarea"}/>
-            </div>
+                <Field name='message'
+                       placeholder={"Your message..."}
+                       component={Textarea}
+                       validate={[requiredField, minLengthCreator(30)]}
+                />
             <div className={styles.formBtn}>
-                <button type="submit" className={styles.submitBtn}>SEND</button>
+                <button type="submit"
+                        className={styles.submitBtn}>SEND
+                </button>
             </div>
         </form>
     );
@@ -37,10 +49,9 @@ let Contacts = (props) => {
             contacts: formData.contact,
             message: formData.message,
         })
-        // console.log(formData)
             .then((response) => {
-            // alert('Your message has been send')
-        });
+                alert('Your message has been send')
+            });
     };
 
     return (

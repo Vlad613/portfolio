@@ -87,6 +87,22 @@
         padding-right: 15px;
         padding-left: 15px;
 
+        .error {
+          border: 2px solid #ee031f;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(255, 0, 37, 0.25);
+          transition: all 0.3s ease-in-out 0s;
+          z-index: 100;
+        }
+        .errorMessage {
+          //position: absolute;
+          z-index: 150;
+          color: #ee031f;
+          background-color: #878d8d;
+          position: relative;
+          right: -54px;
+        }
+
         textarea {
           width: 100%;
           min-height: 150px;
@@ -109,6 +125,7 @@
           border: 1px solid #eee;
           transition: all 0.3s ease-in-out 0s;
           font-size: 1rem;
+
 
           &:focus {
             color: #495057;
