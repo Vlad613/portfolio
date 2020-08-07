@@ -8,7 +8,7 @@ import * as axios from 'axios';
 
 
 let ContactsForm = (props) => {
-
+    // const {handleSubmit, reset} = props;
     return (
         <form className={styles.contactsForm} onSubmit={props.handleSubmit}>
             <h5 className={styles.formTitle}>
@@ -28,16 +28,16 @@ let ContactsForm = (props) => {
 };
 
 const ContactReduxForm = reduxForm({form: 'contacts'})(ContactsForm);
-// export default ContactsForm
 
 let Contacts = (props) => {
 
     let onSubmit = (formData) => {
-        axios.post('http://localhost:3011/sendMessage', {
+        axios.post('http://localhost:3012/sendMessage', {
             name: formData.name,
             contacts: formData.contact,
             message: formData.message,
         })
+        // console.log(formData)
             .then((response) => {
             // alert('Your message has been send')
         });

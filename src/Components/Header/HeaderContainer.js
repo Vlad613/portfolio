@@ -11,7 +11,6 @@ let mapStateToProps = (state) => {
         headerReducer: state.headerReducer
     }
 };
-
 let mapDispatchToProps = (dispatch) => {
     return {
         resizeHeader: () => {
