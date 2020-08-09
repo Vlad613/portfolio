@@ -86,6 +86,7 @@
         text-align: left;
         padding-right: 15px;
         padding-left: 15px;
+        position: relative;
 
         .error {
           border: 2px solid #ee031f;
@@ -93,14 +94,15 @@
           box-shadow: 0 0 0 0.2rem rgba(255, 0, 37, 0.25);
           transition: all 0.3s ease-in-out 0s;
           z-index: 100;
+          width: 100%;
         }
         .errorMessage {
-          //position: absolute;
           z-index: 150;
           color: #ee031f;
-          background-color: #878d8d;
-          position: relative;
-          right: -54px;
+          position: absolute;
+          right: -12%;
+          top: 10%;
+          max-width: 87px;
         }
 
         textarea {

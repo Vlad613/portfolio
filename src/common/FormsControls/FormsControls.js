@@ -7,7 +7,7 @@ export const Textarea = ({input, meta, ...props}) => {
     return (
         <div className={styles.formText}>
             <textarea {...input} {...props} className={hasError && styles.error}/>
-            {hasError && <div className={styles.errorMessage}>some error</div>}
+            {hasError && <div className={styles.errorMessage}>The field must be filled in and contain at least 30 characters.</div>}
         </div>
     )
 };
