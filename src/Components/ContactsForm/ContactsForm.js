@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 import {Field, reduxForm} from "redux-form";
 import * as axios from 'axios';
 import {minLengthCreator, requiredField} from "../../utils/validators/validators";
-import {Textarea} from "../../common/FormsControls/FormsControls";
+import {Input, InputEmail, InputName, Textarea} from "../../common/FormsControls/FormsControls";
 
 
 let ContactsForm = (props) => {
@@ -18,12 +18,13 @@ let ContactsForm = (props) => {
                 <Field type="text"
                        name='name'
                        placeholder={"Your Name"}
-                       component={"input"}
+                       component={InputName}
                        validate={[requiredField]}/>
                 <Field type="text"
                        name='contact'
                        placeholder={"Your Email"}
-                       component={"input"}/>
+                       component={InputEmail}
+                       validate={[requiredField,]}/>
             </div>
                 <Field name='message'
                        placeholder={"Your message..."}

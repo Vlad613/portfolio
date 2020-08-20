@@ -45,15 +45,15 @@
         input {
           display: flex;
           align-self: flex-start;
-          width: 50%;
+          width: 100%;
           position: relative;
           visibility: visible;
           animation-duration: 1.5s;
           animation-name: fadeInUp;
           margin-top: 1rem !important;
           margin-bottom: 1rem;
-          margin-right: 0.5rem;
-          margin-left: 0.5rem;
+          //margin-right: 0.5rem;
+          //margin-left: 0.5rem;
           font: 400 16px/1.8 'Open Sans', sans-serif;
           color: #333;
           background: #fff;
@@ -96,13 +96,47 @@
           z-index: 100;
           width: 100%;
         }
+
         .errorMessage {
-          z-index: 150;
           color: #ee031f;
           position: absolute;
           right: -12%;
           top: 10%;
           max-width: 87px;
+          z-index: 150;
+          @media screen and (max-width: 687px) {
+            right: 10%;
+          }
+        }
+
+        .errorMessageInput {
+          color: #ee031f;
+          position: absolute;
+          right: -94%;
+          top: 10%;
+          max-width: 87px;
+          z-index: 150;
+          @media screen and (max-width: 687px) {
+            font: 400 13.5px/1.4 'Josefin Sans', sans-serif;
+            right: 10%;
+            top: 30%;
+          }
+        }
+
+        .errorMessageInputName {
+          right: 93%;
+          min-width: 87px;
+          @media screen and (max-width: 687px) {
+            right: 10%;
+          }
+        }
+
+        .errorMessageInputEmail {
+          right: -30%;
+          min-width: 87px;
+          @media screen and (max-width: 687px) {
+            right: 10%;
+          }
         }
 
         textarea {
@@ -115,8 +149,8 @@
           animation-name: fadeInUp;
           margin-top: 1rem !important;
           margin-bottom: 1rem;
-          margin-right: 0.5rem;
-          margin-left: 0.5rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
           font: 400 16px/1.8 'Open Sans', sans-serif;
           color: #333;
           background: #fff;
@@ -138,6 +172,7 @@
           }
 
           @media screen and (max-width: 687px) {
+            margin-right: 0;
           }
         }
       }
