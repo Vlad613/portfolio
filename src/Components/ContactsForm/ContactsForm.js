@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 import {Field, reduxForm} from "redux-form";
 import * as axios from 'axios';
 import {minLengthCreator, requiredField} from "../../utils/validators/validators";
-import {Input, InputEmail, InputName, Textarea} from "../../common/FormsControls/FormsControls";
+import {InputEmail, InputName, Textarea} from "../../common/FormsControls/FormsControls";
 
 
 let ContactsForm = (props) => {
