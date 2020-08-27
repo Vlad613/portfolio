@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eb43c63b.chunk.css",
-    "main.js": "/portfolio/static/js/main.bacf9e1c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bacf9e1c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.98877b15.chunk.css",
+    "main.js": "/portfolio/static/js/main.fa20dca3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fa20dca3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.971f9005.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.971f9005.js.map",
-    "static/js/2.b055c2a8.chunk.js": "/portfolio/static/js/2.b055c2a8.chunk.js",
-    "static/js/2.b055c2a8.chunk.js.map": "/portfolio/static/js/2.b055c2a8.chunk.js.map",
+    "static/js/2.c4a4156d.chunk.js": "/portfolio/static/js/2.c4a4156d.chunk.js",
+    "static/js/2.c4a4156d.chunk.js.map": "/portfolio/static/js/2.c4a4156d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4fba38b02e1dc67f6237cd711bfdd40f.js": "/portfolio/precache-manifest.4fba38b02e1dc67f6237cd711bfdd40f.js",
+    "precache-manifest.37fc9ba35ad6c3fa36e73ae9729c1598.js": "/portfolio/precache-manifest.37fc9ba35ad6c3fa36e73ae9729c1598.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.eb43c63b.chunk.css.map": "/portfolio/static/css/main.eb43c63b.chunk.css.map",
+    "static/css/main.98877b15.chunk.css.map": "/portfolio/static/css/main.98877b15.chunk.css.map",
     "static/media/JS.jpg": "/portfolio/static/media/JS.8b8524a4.jpg",
     "static/media/MainPhotoMiniTest.jpg": "/portfolio/static/media/MainPhotoMiniTest.17f7ddd4.jpg",
     "static/media/MainPhotoTest.jpg": "/portfolio/static/media/MainPhotoTest.245144c3.jpg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.971f9005.js",
-    "static/js/2.b055c2a8.chunk.js",
-    "static/css/main.eb43c63b.chunk.css",
-    "static/js/main.bacf9e1c.chunk.js"
+    "static/js/2.c4a4156d.chunk.js",
+    "static/css/main.98877b15.chunk.css",
+    "static/js/main.fa20dca3.chunk.js"
   ]
 }
